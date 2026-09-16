@@ -1,0 +1,6 @@
+# regenerable OCR intermediates
+pages/
+cols/
+ocr/
+# OS junk
+.DS_Store

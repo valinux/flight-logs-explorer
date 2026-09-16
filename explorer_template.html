@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flight Logs & Contacts Explorer</title>
+<style>
+  :root {
+    --bg: #0b1020;
+    --bg2: #111a30;
+    --panel: #151f38;
+    --panel2: #1a2542;
+    --border: #263457;
+    --text: #e6ecf7;
+    --muted: #8b9bbd;
+    --accent: #4da3ff;
+    --accent2: #7c5cff;
+    --good: #37d67a;
+    --bad: #ff6b6b;
+    --chip: #1e2b4d;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: radial-gradient(1200px 600px at 80% -10%, #1b2a52 0%, var(--bg) 55%) fixed;
+    color: var(--text);
+    font-family: "SF Pro Text", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    min-height: 100vh;
+  }
+  header {
+    padding: 28px 32px 0;
+    border-bottom: 1px solid var(--border);
+    background: linear-gradient(180deg, rgba(77,163,255,.08), transparent);
+  }
+  header h1 {
+    margin: 0 0 4px;
+    font-size: 24px;
+    letter-spacing: .5px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  header h1 .plane { font-size: 26px; }
+  header p { margin: 0 0 14px; color: var(--muted); }
+  .tabs { display: flex; gap: 4px; }
+  .tabs button {
+    background: none; border: none; border-bottom: 3px solid transparent;
+    color: var(--muted); font-size: 15px; font-weight: 600;
+    padding: 10px 18px 12px; cursor: pointer;
+  }
+  .tabs button:hover { color: var(--text); }
+  .tabs button.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .stats {
+    display: flex; flex-wrap: wrap; gap: 10px;
+    padding: 16px 32px 0;
+  }
+  .stat {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 10px 16px;
+    min-width: 130px;
+  }
+  .stat .num { font-size: 20px; font-weight: 700; color: var(--accent); }
+  .stat .lbl { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); }
+  .toolbar {
+    display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+    padding: 18px 32px;
+    position: sticky; top: 0; z-index: 20;
+    background: linear-gradient(180deg, var(--bg) 70%, transparent);
+  }
+  .search {
+    flex: 1 1 320px;
+    display: flex; align-items: center; gap: 8px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0 12px;
+  }
+  .search input {
+    flex: 1; background: none; border: none; outline: none;
+    color: var(--text); font-size: 15px; padding: 11px 0;
+  }
+  .search input::placeholder { color: var(--muted); }
+  select, button.btn {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: 10px;
+    padding: 10px 12px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  select:hover, button.btn:hover { border-color: var(--accent); }
+  button.btn.primary {
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    border: none; font-weight: 600; color: #fff;
+  }
+  button.btn.ghost { color: var(--muted); }
+  .filters {
+    display: flex; flex-wrap: wrap; gap: 10px;
+    padding: 0 32px 14px;
+  }
+  .filters select { max-width: 220px; }
+  .tablewrap {
+    margin: 0 32px 24px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: auto;
+    background: var(--panel);
+    max-height: calc(100vh - 340px);
+    min-height: 300px;
+  }
+  table { border-collapse: collapse; width: 100%; min-width: 1100px; }
+  thead th {
+    position: sticky; top: 0; z-index: 5;
+    background: var(--panel2);
+    color: var(--muted);
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: .8px;
+    text-align: left;
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+  }
+  thead th:hover { color: var(--text); }
+  thead th .arrow { color: var(--accent); margin-left: 4px; }
+  tbody td {
+    padding: 10px 14px;
+    border-bottom: 1px solid rgba(38,52,87,.5);
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  tbody tr { cursor: pointer; transition: background .12s; }
+  tbody tr:hover { background: rgba(77,163,255,.08); }
+  .badge {
+    display: inline-block; padding: 2px 9px; border-radius: 999px;
+    font-size: 11px; font-weight: 600;
+  }
+  .badge.yes { background: rgba(55,214,122,.15); color: var(--good); }
+  .badge.no { background: rgba(255,107,107,.15); color: var(--bad); }
+  .badge.src { background: var(--chip); color: var(--muted); }
+  .badge.fly { background: rgba(124,92,255,.18); color: #b7a5ff; cursor: pointer; }
+  .badge.x-exact { background: rgba(55,214,122,.15); color: var(--good); }
+  .badge.x-nickname { background: rgba(77,163,255,.15); color: var(--accent); }
+  .badge.x-initial { background: rgba(255,196,66,.15); color: #ffc442; }
+  .badge.x-weak { background: var(--chip); color: var(--muted); }
+  .pagination {
+    display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+    padding: 0 32px 32px;
+    color: var(--muted);
+  }
+  .pagination .pages { display: flex; gap: 6px; }
+  .pagination button.pg {
+    min-width: 34px; padding: 7px 0; text-align: center;
+    background: var(--panel); border: 1px solid var(--border);
+    color: var(--text); border-radius: 8px; cursor: pointer;
+  }
+  .pagination button.pg.active {
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    border: none; font-weight: 700;
+  }
+  .pagination button.pg:disabled { opacity: .4; cursor: default; }
+  .colmenu { position: relative; }
+  .colmenu .panel {
+    position: absolute; right: 0; top: 110%; z-index: 30;
+    background: var(--panel2); border: 1px solid var(--border);
+    border-radius: 12px; padding: 12px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 6px 16px;
+    box-shadow: 0 12px 40px rgba(0,0,0,.5);
+    min-width: 340px;
+  }
+  .colmenu label { display: flex; gap: 8px; align-items: center; color: var(--text); font-size: 13px; cursor: pointer; }
+  .hidden { display: none !important; }
+  .overlay {
+    position: fixed; inset: 0; background: rgba(4,8,18,.7);
+    backdrop-filter: blur(4px);
+    display: flex; align-items: center; justify-content: center;
+    z-index: 100; padding: 24px;
+  }
+  .modal {
+    background: var(--panel2);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    width: min(680px, 100%);
+    max-height: 85vh;
+    overflow: auto;
+    box-shadow: 0 24px 80px rgba(0,0,0,.6);
+  }
+  .modal .mhead {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 18px 22px; border-bottom: 1px solid var(--border);
+  }
+  .modal .mhead h2 { margin: 0; font-size: 17px; }
+  .modal .close {
+    background: none; border: none; color: var(--muted);
+    font-size: 22px; cursor: pointer; line-height: 1;
+  }
+  .modal .close:hover { color: var(--text); }
+  .modal .grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 0; padding: 8px 22px 22px;
+  }
+  .modal .field { padding: 9px 0; border-bottom: 1px solid rgba(38,52,87,.4); }
+  .modal .field .k { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); }
+  .modal .field .v { margin-top: 2px; word-break: break-word; }
+  .modal .raw {
+    margin: 0 22px 22px; padding: 14px;
+    background: var(--bg2); border: 1px solid var(--border); border-radius: 10px;
+    font-family: ui-monospace, Menlo, monospace; font-size: 12px;
+    white-space: pre-wrap; color: var(--muted);
+  }
+  .noresults { padding: 48px; text-align: center; color: var(--muted); }
+  mark { background: rgba(77,163,255,.35); color: inherit; border-radius: 3px; padding: 0 1px; }
+  a.link { color: var(--accent); cursor: pointer; text-decoration: none; }
+  a.link:hover { text-decoration: underline; }
+  @media (max-width: 720px) {
+    header, .stats, .toolbar, .filters, .pagination { padding-left: 16px; padding-right: 16px; }
+    .tablewrap { margin: 0 16px 16px; }
+    .modal .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1><span class="plane">✈</span> Flight Logs & Contacts Explorer</h1>
+  <p>Flight-log entries from <b>Flight_Logs.xlsx</b> plus contacts extracted by OCR from the scanned fax directory <b>Jeffrey_Epstein_UNKNOWN.pdf</b> — all data embedded, works fully offline.</p>
+  <div class="tabs">
+    <button id="tab-flights" class="active">✈ Flights</button>
+    <button id="tab-contacts">☎ Contacts</button>
+    <button id="tab-xref">⇄ Cross-Reference</button>
+  </div>
+</header>
+
+<!-- ============ FLIGHTS VIEW ============ -->
+<div id="view-flights">
+  <div class="stats" id="stats"></div>
+
+  <div class="toolbar">
+    <div class="search">
+      <span>🔎</span>
+      <input id="q" type="text" placeholder="Search passengers, airports, tail numbers, flight numbers…" autocomplete="off">
+    </div>
+    <div class="colmenu">
+      <button class="btn" id="colBtn">Columns ▾</button>
+      <div class="panel hidden" id="colPanel"></div>
+    </div>
+    <button class="btn" id="exportBtn">⬇ Export CSV</button>
+    <button class="btn ghost" id="resetBtn">Reset</button>
+  </div>
+
+  <div class="filters" id="filters"></div>
+
+  <div class="tablewrap">
+    <table id="tbl">
+      <thead><tr id="headRow"></tr></thead>
+      <tbody id="bodyRows"></tbody>
+    </table>
+    <div class="noresults hidden" id="noResults">No flights match your search.</div>
+  </div>
+
+  <div class="pagination" id="pagination"></div>
+</div>
+
+<!-- ============ CONTACTS VIEW ============ -->
+<div id="view-contacts" class="hidden">
+  <div class="toolbar" style="padding-bottom:12px">
+    <button class="btn" id="c-toggle">☰ Switch to legacy OCR view (flight-log cross-reference)</button>
+    <span style="color:var(--muted);font-size:12px">Contact directory — review edition (Astra), shown unmodified with source-scan images.</span>
+  </div>
+  <iframe id="c-frame" src="Contact_directory_review.html" title="Contact directory — review edition"
+    style="display:block;width:calc(100% - 64px);margin:0 32px 24px;height:calc(100vh - 250px);min-height:420px;border:1px solid var(--border);border-radius:14px;background:#fff"></iframe>
+
+  <div id="c-legacy" class="hidden">
+  <div class="stats" id="c-stats"></div>
+
+  <div class="toolbar">
+    <div class="search">
+      <span>🔎</span>
+      <input id="c-q" type="text" placeholder="Search names, phone numbers, emails, addresses…" autocomplete="off">
+    </div>
+    <select id="c-letter"><option value="">Letter: all</option></select>
+    <select id="c-fly">
+      <option value="">Flight logs: all</option>
+      <option value="yes">Also in flight logs</option>
+      <option value="no">Not in flight logs</option>
+    </select>
+    <select id="c-has">
+      <option value="">Has: anything</option>
+      <option value="email">Has email</option>
+      <option value="phone">Has phone</option>
+    </select>
+    <button class="btn" id="c-exportBtn">⬇ Export CSV</button>
+    <button class="btn ghost" id="c-resetBtn">Reset</button>
+  </div>
+
+  <div class="tablewrap">
+    <table id="c-tbl">
+      <thead><tr id="c-headRow"></tr></thead>
+      <tbody id="c-bodyRows"></tbody>
+    </table>
+    <div class="noresults hidden" id="c-noResults">No contacts match your search.</div>
+  </div>
+
+  <div class="pagination" id="c-pagination"></div>
+  </div>
+</div>
+
+<!-- ============ CROSS-REFERENCE VIEW ============ -->
+<div id="view-xref" class="hidden">
+  <div class="stats" id="x-stats"></div>
+
+  <div class="toolbar">
+    <div class="search">
+      <span>🔎</span>
+      <input id="x-q" type="text" placeholder="Search passenger or contact names…" autocomplete="off">
+    </div>
+    <select id="x-type">
+      <option value="">Match type: all</option>
+      <option value="exact">Exact</option>
+      <option value="nickname">Nickname / diminutive</option>
+      <option value="initial">Initial + last name</option>
+      <option value="weak">Weak (abbreviated name)</option>
+    </select>
+    <button class="btn" id="x-exportBtn">⬇ Export CSV</button>
+    <button class="btn ghost" id="x-resetBtn">Reset</button>
+  </div>
+
+  <div class="tablewrap">
+    <table id="x-tbl">
+      <thead><tr id="x-headRow"></tr></thead>
+      <tbody id="x-bodyRows"></tbody>
+    </table>
+    <div class="noresults hidden" id="x-noResults">No cross-references match your search.</div>
+  </div>
+
+  <div class="pagination" id="x-pagination"></div>
+</div>
+
+<!-- shared modal -->
+<div class="overlay hidden" id="overlay">
+  <div class="modal">
+    <div class="mhead">
+      <h2 id="modalTitle">Detail</h2>
+      <button class="close" id="modalClose">×</button>
+    </div>
+    <div class="grid" id="modalGrid"></div>
+    <div class="raw hidden" id="modalRaw"></div>
+  </div>
+</div>
+
+<script id="flight-data" type="application/json">/*__FLIGHT_DATA__*/</script>
+<script id="contact-data" type="application/json">/*__CONTACT_DATA__*/</script>
+<script id="xref-data" type="application/json">/*__XREF_DATA__*/</script>
+<script>
+/* ================= shared helpers ================= */
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"']/g,
+  c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+function highlight(text, q) {
+  const t = esc(text);
+  if (!q) return t;
+  const e = esc(q).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return t.replace(new RegExp('(' + e + ')', 'ig'), '<mark>$1</mark>');
+}
+function debounceInput(el, fn) {
+  let t;
+  el.addEventListener('input', () => { clearTimeout(t); t = setTimeout(fn, 160); });
+}
+function downloadCSV(filename, headers, rows) {
+  const q = v => '"' + String(v ?? '').replace(/"/g, '""') + '"';
+  const lines = [headers.map(q).join(',')];
+  rows.forEach(r => lines.push(r.map(q).join(',')));
+  const blob = new Blob(['﻿' + lines.join('\r\n')], { type: 'text/csv;charset=utf-8' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = filename;
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+function buildPagination(box, page, pageSize, totalItems, onPage, onSize) {
+  const total = Math.max(1, Math.ceil(totalItems / pageSize));
+  if (page > total) page = total;
+  const from = totalItems ? (page - 1) * pageSize + 1 : 0;
+  const to = Math.min(totalItems, page * pageSize);
+  let html = '<span>Showing <b>' + from.toLocaleString() + '–' + to.toLocaleString() +
+    '</b> of <b>' + totalItems.toLocaleString() + '</b></span><span style="flex:1"></span>';
+  html += '<label>Rows per page <select class="ps">' + [25, 50, 100, 250].map(n =>
+    '<option' + (n === pageSize ? ' selected' : '') + '>' + n + '</option>').join('') + '</select></label>';
+  html += '<div class="pages">';
+  html += '<button class="pg" data-p="prev"' + (page === 1 ? ' disabled' : '') + '>‹</button>';
+  const win = [];
+  for (let p = 1; p <= total; p++)
+    if (p === 1 || p === total || Math.abs(p - page) <= 2) win.push(p);
+  let last = 0;
+  win.forEach(p => {
+    if (p - last > 1) html += '<span>…</span>';
+    html += '<button class="pg' + (p === page ? ' active' : '') + '" data-p="' + p + '">' + p + '</button>';
+    last = p;
+  });
+  html += '<button class="pg" data-p="next"' + (page === total ? ' disabled' : '') + '>›</button></div>';
+  box.innerHTML = html;
+  box.querySelectorAll('button.pg').forEach(b => b.addEventListener('click', () => {
+    const p = b.dataset.p;
+    onPage(p === 'prev' ? page - 1 : p === 'next' ? page + 1 : +p);
+  }));
+  const ps = box.querySelector('.ps');
+  if (ps) ps.addEventListener('change', () => onSize(+ps.value));
+  return total;
+}
+function openModal(title, fields, raw) {
+  $('modalTitle').innerHTML = title;
+  $('modalGrid').innerHTML = fields.map(([k, v]) =>
+    '<div class="field"><div class="k">' + esc(k) + '</div><div class="v">' +
+    (v === '' || v == null ? '<span style="color:var(--muted)">—</span>' : v) +
+    '</div></div>').join('');
+  const rawEl = $('modalRaw');
+  if (raw) { rawEl.textContent = raw; rawEl.classList.remove('hidden'); }
+  else rawEl.classList.add('hidden');
+  $('overlay').classList.remove('hidden');
+}
+$('modalClose').addEventListener('click', () => $('overlay').classList.add('hidden'));
+$('overlay').addEventListener('click', e => { if (e.target === $('overlay')) $('overlay').classList.add('hidden'); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') $('overlay').classList.add('hidden'); });
+
+/* ================= tabs ================= */
+function switchTab(which) {
+  ['flights', 'contacts', 'xref'].forEach(t => {
+    $('tab-' + t).classList.toggle('active', which === t);
+    $('view-' + t).classList.toggle('hidden', which !== t);
+  });
+  if (history.replaceState) history.replaceState(null, '', '#' + which);
+}
+$('tab-flights').addEventListener('click', () => switchTab('flights'));
+$('tab-contacts').addEventListener('click', () => switchTab('contacts'));
+$('tab-xref').addEventListener('click', () => switchTab('xref'));
+const initialTab = (location.hash || '').replace('#', '');
+if (['contacts', 'xref'].includes(initialTab)) switchTab(initialTab);
+
+/* ================= FLIGHTS ================= */
+const Flights = (function () {
+  const raw = JSON.parse($('flight-data').textContent);
+  const HEADERS = raw.headers;
+  const ROWS = raw.rows;
+  const COL = {};
+  HEADERS.forEach((h, i) => COL[h] = i);
+
+  const DEFAULT_COLS = ['Date', 'Aircraft Model', 'Aircraft Tail #', 'DEP: Code', 'ARR: Code',
+    'DEP', 'ARR', 'Flight_No.', 'First Last', 'Known', 'Data Source'];
+  let visibleCols = DEFAULT_COLS.filter(c => c in COL);
+
+  const FACETS = ['Year', 'Aircraft Model', 'Aircraft Tail #', 'Aircraft Type',
+    'DEP: Code', 'ARR: Code', 'Known', 'Data Source'];
+
+  const state = { q: '', filters: {}, sortCol: 'Date', sortDir: -1, page: 1, pageSize: 50 };
+  FACETS.forEach(f => state.filters[f] = '');
+
+  function uniq(idx) { const s = new Set(); ROWS.forEach(r => { if (r[idx] !== '' && r[idx] != null) s.add(r[idx]); }); return s; }
+
+  function renderStats(filtered) {
+    const tails = new Set(), pax = new Set(), airports = new Set();
+    filtered.forEach(r => {
+      tails.add(r[COL['Aircraft Tail #']]);
+      pax.add(r[COL['First Last']]);
+      airports.add(r[COL['DEP: Code']]); airports.add(r[COL['ARR: Code']]);
+    });
+    $('stats').innerHTML = [
+      [filtered.length.toLocaleString(), 'Flights shown'],
+      [pax.size.toLocaleString(), 'Passengers'],
+      [tails.size.toLocaleString(), 'Aircraft'],
+      [airports.size.toLocaleString(), 'Airports']
+    ].map(([n, l]) => '<div class="stat"><div class="num">' + n + '</div><div class="lbl">' + l + '</div></div>').join('');
+  }
+
+  function buildFilters() {
+    const box = $('filters');
+    box.innerHTML = '';
+    FACETS.forEach(name => {
+      const idx = COL[name];
+      const vals = [...uniq(idx)].sort((a, b) =>
+        typeof a === 'number' && typeof b === 'number' ? a - b : String(a).localeCompare(String(b)));
+      const sel = document.createElement('select');
+      sel.innerHTML = '<option value="">' + esc(name) + ': all</option>' +
+        vals.map(v => '<option value="' + esc(v) + '">' + esc(v) + '</option>').join('');
+      sel.addEventListener('change', () => { state.filters[name] = sel.value; state.page = 1; render(); });
+      box.appendChild(sel);
+    });
+  }
+
+  function buildColMenu() {
+    const panel = $('colPanel');
+    panel.innerHTML = '';
+    HEADERS.forEach(h => {
+      const lab = document.createElement('label');
+      const cb = document.createElement('input');
+      cb.type = 'checkbox';
+      cb.checked = visibleCols.includes(h);
+      cb.addEventListener('change', () => {
+        if (cb.checked && !visibleCols.includes(h)) {
+          visibleCols = HEADERS.filter(x => x === h || visibleCols.includes(x));
+        } else if (!cb.checked) {
+          visibleCols = visibleCols.filter(x => x !== h);
+        }
+        renderTable();
+      });
+      lab.appendChild(cb);
+      lab.appendChild(document.createTextNode(h));
+      panel.appendChild(lab);
+    });
+  }
+  $('colBtn').addEventListener('click', e => { e.stopPropagation(); $('colPanel').classList.toggle('hidden'); });
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.colmenu')) $('colPanel').classList.add('hidden');
+  });
+
+  debounceInput($('q'), () => { state.q = $('q').value.trim().toLowerCase(); state.page = 1; render(); });
+
+  $('resetBtn').addEventListener('click', () => {
+    state.q = ''; $('q').value = '';
+    FACETS.forEach(f => state.filters[f] = '');
+    document.querySelectorAll('#filters select').forEach(s => s.value = '');
+    state.sortCol = 'Date'; state.sortDir = -1; state.page = 1;
+    render();
+  });
+
+  let filtered = [];
+
+  function getFiltered() {
+    const q = state.q;
+    let out = ROWS.filter(r => {
+      for (const f of FACETS) {
+        const want = state.filters[f];
+        if (want !== '' && String(r[COL[f]]) !== want) return false;
+      }
+      if (q) {
+        for (let i = 0; i < r.length; i++)
+          if (String(r[i]).toLowerCase().includes(q)) return true;
+        return false;
+      }
+      return true;
+    });
+    const idx = COL[state.sortCol], dir = state.sortDir;
+    out = out.slice().sort((a, b) => {
+      const x = a[idx], y = b[idx];
+      if (x === y) return 0;
+      if (x === '' || x == null) return 1;
+      if (y === '' || y == null) return -1;
+      if (typeof x === 'number' && typeof y === 'number') return (x - y) * dir;
+      return String(x).localeCompare(String(y)) * dir;
+    });
+    return out;
+  }
+
+  function cellHTML(name, r, q) {
+    const v = r[COL[name]];
+    if (name === 'Known') {
+      return v === 'Yes' ? '<span class="badge yes">Yes</span>'
+        : v === 'No' ? '<span class="badge no">No</span>' : esc(v);
+    }
+    if (name === 'Data Source') return '<span class="badge src">' + esc(v) + '</span>';
+    return highlight(v, q);
+  }
+
+  function renderTable() {
+    const head = $('headRow');
+    head.innerHTML = '';
+    visibleCols.forEach(name => {
+      const th = document.createElement('th');
+      th.innerHTML = esc(name) + (state.sortCol === name
+        ? '<span class="arrow">' + (state.sortDir === 1 ? '▲' : '▼') + '</span>' : '');
+      th.addEventListener('click', () => {
+        if (state.sortCol === name) state.sortDir *= -1;
+        else { state.sortCol = name; state.sortDir = 1; }
+        render();
+      });
+      head.appendChild(th);
+    });
+
+    const body = $('bodyRows');
+    body.innerHTML = '';
+    const start = (state.page - 1) * state.pageSize;
+    const pageRows = filtered.slice(start, start + state.pageSize);
+    const frag = document.createDocumentFragment();
+    pageRows.forEach(r => {
+      const tr = document.createElement('tr');
+      tr.innerHTML = visibleCols.map(name => '<td>' + cellHTML(name, r, state.q) + '</td>').join('');
+      tr.addEventListener('click', () => openFlightModal(r));
+      frag.appendChild(tr);
+    });
+    body.appendChild(frag);
+    $('noResults').classList.toggle('hidden', filtered.length !== 0);
+    $('tbl').classList.toggle('hidden', filtered.length === 0);
+  }
+
+  function openFlightModal(r) {
+    const title = esc(r[COL['First Last']] || 'Unknown passenger') + ' · ' + esc(r[COL['Date']]) +
+      ' · ' + esc(r[COL['DEP: Code']]) + ' → ' + esc(r[COL['ARR: Code']]);
+    openModal(title, HEADERS.map((h, i) => [h, esc(r[i])]), null);
+  }
+
+  function render() {
+    filtered = getFiltered();
+    renderStats(filtered);
+    renderTable();
+    buildPagination($('pagination'), state.page, state.pageSize, filtered.length,
+      p => { state.page = p; render(); document.querySelector('#view-flights .tablewrap').scrollTop = 0; },
+      s => { state.pageSize = s; state.page = 1; render(); });
+  }
+
+  $('exportBtn').addEventListener('click', () =>
+    downloadCSV('flight_logs_filtered.csv', HEADERS, filtered));
+
+  buildFilters();
+  buildColMenu();
+  render();
+
+  return {
+    searchFor(q) {
+      switchTab('flights');
+      $('q').value = q;
+      state.q = q.toLowerCase();
+      state.page = 1;
+      render();
+    }
+  };
+})();
+
+/* ================= CONTACTS ================= */
+const Contacts = (function () {
+  const ROWS = JSON.parse($('contact-data').textContent);
+
+  // toggle between Astra's review edition (iframe, default) and the legacy
+  // OCR table with the flight-log cross-reference
+  let showingLegacy = false;
+  $('c-toggle').addEventListener('click', () => {
+    showingLegacy = !showingLegacy;
+    $('c-frame').classList.toggle('hidden', showingLegacy);
+    $('c-legacy').classList.toggle('hidden', !showingLegacy);
+    $('c-toggle').textContent = showingLegacy
+      ? '☰ Switch to review edition (Astra)'
+      : '☰ Switch to legacy OCR view (flight-log cross-reference)';
+  });
+  const COLS = ['Name', 'Phones', 'Emails', 'Address', 'In Flight Logs', 'Page'];
+  const KEY = { Name: 'name', Phones: 'phones', Emails: 'emails', Address: 'address',
+    'In Flight Logs': 'flight_log_names', Page: 'page' };
+
+  const state = { q: '', letter: '', fly: '', has: '', sortCol: 'Name', sortDir: 1, page: 1, pageSize: 50 };
+  let filtered = [];
+
+  // letter dropdown
+  const letters = [...new Set(ROWS.map(c => (c.name.match(/[A-Za-z]/) || [''])[0].toUpperCase()))].sort();
+  $('c-letter').innerHTML = '<option value="">Letter: all</option>' +
+    letters.map(l => '<option>' + l + '</option>').join('');
+
+  const phonesText = c => c.phones.map(p => p.number + (p.label ? ' (' + p.label + ')' : '')).join('  ·  ');
+
+  function getFiltered() {
+    const q = state.q;
+    return ROWS.filter(c => {
+      if (state.letter && (c.name.match(/[A-Za-z]/) || [''])[0].toUpperCase() !== state.letter) return false;
+      if (state.fly === 'yes' && !c.flight_log_names.length) return false;
+      if (state.fly === 'no' && c.flight_log_names.length) return false;
+      if (state.has === 'email' && !c.emails.length) return false;
+      if (state.has === 'phone' && !c.phones.length) return false;
+      if (q) {
+        const hay = (c.name + ' ' + c.address + ' ' + phonesText(c) + ' ' +
+          c.emails.join(' ') + ' ' + c.flight_log_names.join(' ')).toLowerCase();
+        return q.split(/\s+/).every(tok => hay.includes(tok));
+      }
+      return true;
+    }).sort((a, b) => {
+      const k = KEY[state.sortCol];
+      const x = k === 'phones' ? phonesText(a) : k === 'emails' ? a.emails.join(' ') : a[k];
+      const y = k === 'phones' ? phonesText(b) : k === 'emails' ? b.emails.join(' ') : b[k];
+      if (Array.isArray(x)) return (x.length - y.length) * state.sortDir;
+      if (typeof x === 'number') return (x - y) * state.sortDir;
+      return String(x).localeCompare(String(y)) * state.sortDir;
+    });
+  }
+
+  function renderStats() {
+    $('c-stats').innerHTML = [
+      [filtered.length.toLocaleString(), 'Contacts shown'],
+      [filtered.filter(c => c.phones.length).length.toLocaleString(), 'With phone'],
+      [filtered.filter(c => c.emails.length).length.toLocaleString(), 'With email'],
+      [filtered.filter(c => c.flight_log_names.length).length.toLocaleString(), 'Also in flight logs']
+    ].map(([n, l]) => '<div class="stat"><div class="num">' + n + '</div><div class="lbl">' + l + '</div></div>').join('');
+  }
+
+  function renderTable() {
+    const head = $('c-headRow');
+    head.innerHTML = '';
+    COLS.forEach(name => {
+      const th = document.createElement('th');
+      th.innerHTML = esc(name) + (state.sortCol === name
+        ? '<span class="arrow">' + (state.sortDir === 1 ? '▲' : '▼') + '</span>' : '');
+      th.addEventListener('click', () => {
+        if (state.sortCol === name) state.sortDir *= -1;
+        else { state.sortCol = name; state.sortDir = 1; }
+        render();
+      });
+      head.appendChild(th);
+    });
+
+    const body = $('c-bodyRows');
+    body.innerHTML = '';
+    const start = (state.page - 1) * state.pageSize;
+    const frag = document.createDocumentFragment();
+    filtered.slice(start, start + state.pageSize).forEach(c => {
+      const tr = document.createElement('tr');
+      const fly = c.flight_log_names.length
+        ? '<span class="badge fly">✈ ' + esc(c.flight_log_names[0]) +
+          (c.flight_log_names.length > 1 ? ' +' + (c.flight_log_names.length - 1) : '') + '</span>'
+        : '';
+      tr.innerHTML =
+        '<td><b>' + highlight(c.name, state.q) + '</b></td>' +
+        '<td>' + highlight(phonesText(c), state.q) + '</td>' +
+        '<td>' + highlight(c.emails.join('  '), state.q) + '</td>' +
+        '<td>' + highlight(c.address, state.q) + '</td>' +
+        '<td>' + fly + '</td>' +
+        '<td>' + c.page + '</td>';
+      tr.addEventListener('click', () => openContactModal(c));
+      frag.appendChild(tr);
+    });
+    body.appendChild(frag);
+    $('c-noResults').classList.toggle('hidden', filtered.length !== 0);
+    $('c-tbl').classList.toggle('hidden', filtered.length === 0);
+  }
+
+  function openContactModal(c) {
+    const flyHtml = c.flight_log_names.length
+      ? c.flight_log_names.map(n =>
+          '<a class="link" data-pax="' + esc(n) + '">✈ ' + esc(n) + '</a>').join('<br>') +
+        ' <span style="color:var(--muted)">(' + c.flight_count + ' flight' +
+        (c.flight_count === 1 ? '' : 's') + ')</span>'
+      : '';
+    openModal(esc(c.name) + ' <span style="color:var(--muted);font-size:13px">· PDF page ' + c.page + '</span>', [
+      ['Phones', c.phones.map(p => esc(p.number) +
+        (p.label ? ' <span class="badge src">' + esc(p.label) + '</span>' : '')).join('<br>')],
+      ['Emails', c.emails.map(e => esc(e)).join('<br>')],
+      ['Address', esc(c.address)],
+      ['Notes', esc(c.notes || '')],
+      ['Also in flight logs', flyHtml],
+    ], 'Raw OCR text (page ' + c.page + '):\n' + c.raw);
+    $('modalGrid').querySelectorAll('a.link[data-pax]').forEach(a =>
+      a.addEventListener('click', () => {
+        $('overlay').classList.add('hidden');
+        Flights.searchFor(a.dataset.pax);
+      }));
+  }
+
+  function render() {
+    filtered = getFiltered();
+    renderStats();
+    renderTable();
+    buildPagination($('c-pagination'), state.page, state.pageSize, filtered.length,
+      p => { state.page = p; render(); document.querySelector('#view-contacts .tablewrap').scrollTop = 0; },
+      s => { state.pageSize = s; state.page = 1; render(); });
+  }
+
+  debounceInput($('c-q'), () => { state.q = $('c-q').value.trim().toLowerCase(); state.page = 1; render(); });
+  $('c-letter').addEventListener('change', () => { state.letter = $('c-letter').value; state.page = 1; render(); });
+  $('c-fly').addEventListener('change', () => { state.fly = $('c-fly').value; state.page = 1; render(); });
+  $('c-has').addEventListener('change', () => { state.has = $('c-has').value; state.page = 1; render(); });
+  $('c-resetBtn').addEventListener('click', () => {
+    state.q = ''; $('c-q').value = '';
+    state.letter = ''; $('c-letter').value = '';
+    state.fly = ''; $('c-fly').value = '';
+    state.has = ''; $('c-has').value = '';
+    state.sortCol = 'Name'; state.sortDir = 1; state.page = 1;
+    render();
+  });
+  $('c-exportBtn').addEventListener('click', () => downloadCSV(
+    'contacts_filtered.csv',
+    ['page', 'name', 'address', 'phones', 'emails', 'in_flight_logs', 'flight_count'],
+    filtered.map(c => [c.page, c.name, c.address, phonesText(c), c.emails.join('; '),
+      c.flight_log_names.join('; '), c.flight_count])));
+
+  render();
+})();
+
+/* ================= CROSS-REFERENCE ================= */
+const Xref = (function () {
+  const ROWS = JSON.parse($('xref-data').textContent);
+  const COLS = ['Passenger', 'Flights', 'Contact', 'Match', 'Page'];
+  const KEY = { Passenger: 'passenger', Flights: 'flights', Contact: 'contact_name',
+    Match: 'score', Page: 'pages' };
+
+  const state = { q: '', type: '', sortCol: 'Match', sortDir: -1, page: 1, pageSize: 50 };
+  let filtered = [];
+
+  const matchClass = t => t === 'exact' ? 'x-exact' : t === 'nickname' ? 'x-nickname'
+    : t === 'initial' ? 'x-initial' : 'x-weak';
+  const matchLabel = t => t === 'exact' ? 'Exact' : t === 'nickname' ? 'Nickname'
+    : t === 'initial' ? 'Initial' : 'Weak';
+  const firstPage = p => String(p).split(',')[0].trim();
+
+  function getFiltered() {
+    const q = state.q;
+    return ROWS.filter(m => {
+      if (state.type === 'weak' ? !m.match.startsWith('weak')
+          : state.type && m.match !== state.type) return false;
+      if (q) {
+        const hay = (m.passenger + ' ' + m.contact_name + ' ' + m.address + ' ' +
+          m.phones.join(' ') + ' ' + m.emails.join(' ')).toLowerCase();
+        return q.split(/\s+/).every(tok => hay.includes(tok));
+      }
+      return true;
+    }).sort((a, b) => {
+      const k = KEY[state.sortCol];
+      const x = a[k], y = b[k];
+      if (typeof x === 'number') return (x - y) * state.sortDir;
+      const c = String(x).localeCompare(String(y)) * state.sortDir;
+      return c || (b.score - a.score);
+    });
+  }
+
+  function renderStats() {
+    const strong = filtered.filter(m => m.match === 'exact' || m.match === 'nickname');
+    $('x-stats').innerHTML = [
+      [filtered.length.toLocaleString(), 'Matches shown'],
+      [new Set(filtered.map(m => m.passenger)).size.toLocaleString(), 'Passengers matched'],
+      [new Set(filtered.map(m => m.contact_id)).size.toLocaleString(), 'Contacts matched'],
+      [strong.length.toLocaleString(), 'Exact / nickname']
+    ].map(([n, l]) => '<div class="stat"><div class="num">' + n + '</div><div class="lbl">' + l + '</div></div>').join('');
+  }
+
+  function renderTable() {
+    const head = $('x-headRow');
+    head.innerHTML = '';
+    COLS.forEach(name => {
+      const th = document.createElement('th');
+      th.innerHTML = esc(name) + (state.sortCol === name
+        ? '<span class="arrow">' + (state.sortDir === 1 ? '▲' : '▼') + '</span>' : '');
+      th.addEventListener('click', () => {
+        if (state.sortCol === name) state.sortDir *= -1;
+        else { state.sortCol = name; state.sortDir = name === 'Match' || name === 'Flights' ? -1 : 1; }
+        render();
+      });
+      head.appendChild(th);
+    });
+
+    const body = $('x-bodyRows');
+    body.innerHTML = '';
+    const start = (state.page - 1) * state.pageSize;
+    const frag = document.createDocumentFragment();
+    filtered.slice(start, start + state.pageSize).forEach(m => {
+      const tr = document.createElement('tr');
+      tr.innerHTML =
+        '<td><b>' + highlight(m.passenger, state.q) + '</b></td>' +
+        '<td><span class="badge fly">✈ ' + m.flights + '</span></td>' +
+        '<td>' + highlight(m.contact_name, state.q) + '</td>' +
+        '<td><span class="badge ' + matchClass(m.match) + '">' + matchLabel(m.match) + '</span></td>' +
+        '<td>' + esc(m.pages) + '</td>';
+      tr.addEventListener('click', () => openXrefModal(m));
+      frag.appendChild(tr);
+    });
+    body.appendChild(frag);
+    $('x-noResults').classList.toggle('hidden', filtered.length !== 0);
+    $('x-tbl').classList.toggle('hidden', filtered.length === 0);
+  }
+
+  function openXrefModal(m) {
+    openModal(
+      esc(m.passenger) + ' <span style="color:var(--accent)">⇄</span> ' + esc(m.contact_name),
+      [
+        ['Match type', '<span class="badge ' + matchClass(m.match) + '">' + matchLabel(m.match) + '</span>' +
+          ' <span style="color:var(--muted);font-size:12px">(confidence ' + m.score + '/100)</span>'],
+        ['Flights in log', '<a class="link" id="x-goflights">✈ ' + m.flights +
+          ' flight' + (m.flights === 1 ? '' : 's') + ' — view in Flights tab</a>'],
+        ['Contact entry', esc(m.contact_id) + ' · PDF page ' + esc(m.pages) + ' · ' + esc(m.ref)],
+        ['Phones', m.phones.map(p => esc(p)).join('<br>')],
+        ['Emails', m.emails.map(e => esc(e)).join('<br>')],
+        ['Address / other', esc(m.address)],
+        ['Transcription status', esc(m.status)],
+      ], null);
+    const go = $('x-goflights');
+    if (go) go.addEventListener('click', () => {
+      $('overlay').classList.add('hidden');
+      Flights.searchFor(m.passenger);
+    });
+  }
+
+  function render() {
+    filtered = getFiltered();
+    renderStats();
+    renderTable();
+    buildPagination($('x-pagination'), state.page, state.pageSize, filtered.length,
+      p => { state.page = p; render(); document.querySelector('#view-xref .tablewrap').scrollTop = 0; },
+      s => { state.pageSize = s; state.page = 1; render(); });
+  }
+
+  debounceInput($('x-q'), () => { state.q = $('x-q').value.trim().toLowerCase(); state.page = 1; render(); });
+  $('x-type').addEventListener('change', () => { state.type = $('x-type').value; state.page = 1; render(); });
+  $('x-resetBtn').addEventListener('click', () => {
+    state.q = ''; $('x-q').value = '';
+    state.type = ''; $('x-type').value = '';
+    state.sortCol = 'Match'; state.sortDir = -1; state.page = 1;
+    render();
+  });
+  $('x-exportBtn').addEventListener('click', () => downloadCSV(
+    'cross_reference.csv',
+    ['passenger', 'flights', 'contact_id', 'contact_name', 'match_type', 'score',
+      'pdf_pages', 'ref', 'phones', 'emails', 'address'],
+    filtered.map(m => [m.passenger, m.flights, m.contact_id, m.contact_name, m.match,
+      m.score, m.pages, m.ref, m.phones.join('; '), m.emails.join('; '), m.address])));
+
+  render();
+})();
+</script>
+</body>
+</html>
