@@ -6,6 +6,8 @@ source-linked contacts, and a fuzzy cross-reference between passengers and conta
 
 No server, no dependencies, no internet required: open one HTML file and explore.
 
+**[▶ Try it live on GitHub Pages](https://valinux.github.io/flight-logs-explorer/)**
+
 ![Flights tab](screenshots/flights-tab.png)
 
 ---
