@@ -1,0 +1,57 @@
+{
+  "reviewed_on": "2026-09-19",
+  "method": "Independent visual comparison of the full original page images against review/pages/086.json and 094.json; enlarged original column crops and handwritten-name crop. No outside sources used; source review files were not edited.",
+  "source_sha256": "4f8e111d7bd29039742de62e9f67cf5051b617e26a923117df323a5d2fb3c0de",
+  "pages": [
+    {
+      "page": 86,
+      "scope": "Every visible entry and line across all four columns, including marked and redacted areas. Covered text was not inferred.",
+      "corrections": [
+        {
+          "entry_id": "E1447",
+          "column": 3,
+          "old": "561 791 0535 Laura Klins",
+          "suggested": "561 791 0535 Laura Kline",
+          "confidence": "high",
+          "reason": "The final printed surname character is an e in the enlarged original scan."
+        },
+        {
+          "entry_id": "E1447",
+          "column": 3,
+          "old": "561 881 6998 Symar (p)",
+          "suggested": "561 881 6998 Symar (b)",
+          "confidence": "high",
+          "reason": "The printed label is b, with its stem above the bowl, not p."
+        }
+      ],
+      "structural_notes": [
+        {
+          "entry_id": "E1446",
+          "note": "Phones is a handwritten annotation inside the same circled area as Maronet, Bill / ETC / 561-881-8118. Consider attaching it as a source annotation to E1445 rather than presenting it as a separate contact."
+        }
+      ],
+      "uncertainty_notes": [
+        "Katie B[unclear] and the A.R. Loud[unclear] handwritten annotation remain appropriately uncertain; I could not establish a safer complete reading.",
+        "Redaction bars hide multiple lines and partially cross adjacent glyphs. I did not use nearby unredacted entries to reconstruct covered characters.",
+        "The RANCH (RH) heading and Mike Pezulo spelling agree with the larger crops."
+      ],
+      "other_findings": "Other recorded readable lines agree with my independent visual reading; this is not a claim of perfect scan legibility."
+    },
+    {
+      "page": 94,
+      "scope": "Entire portrait page, all eight handwritten name/number pairs and the star beside the final row.",
+      "corrections": [],
+      "needs_adjudication": [
+        {
+          "entry_id": "E1601",
+          "field": "name and first source line",
+          "current": "Katya",
+          "possible_reading": "Ketya",
+          "conservative_reading": "K[unclear]tya",
+          "reason": "The second handwritten character resembles an e; the scan does not support confidently normalizing it to a. No external identity information was used."
+        }
+      ],
+      "other_findings": "All eight telephone numbers match the source digit for digit. The other seven names and the star annotation agree with the reviewed transcription."
+    }
+  ]
+}

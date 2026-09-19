@@ -1,0 +1,125 @@
+{
+ "page": 90,
+ "reviewed_on": "2026-09-19",
+ "method": "Visual comparison of every entry on the original PDF scan; enlarged crops for ambiguous readings.",
+ "source_sha256": "4f8e111d7bd29039742de62e9f67cf5051b617e26a923117df323a5d2fb3c0de",
+ "entries": [
+  {
+   "id": "E1528",
+   "name": null,
+   "parts": [
+    {
+     "page": 90,
+     "column": 1,
+     "lines": [
+      "800 223 5866 Navigant",
+      "877 877 0987 Amex. Centurian",
+      "Travel",
+      "1 800 443 7672 Amex Plat.",
+      "Travel",
+      "800 443-7672 Platinum/Heather",
+      "ext. 63793",
+      "800 715-4440(22339 Global",
+      "Travel",
+      "310 276 2741 1st & Busi./Charlie",
+      "212 983 0779 UN Travels and",
+      "Tours",
+      "323 933-8763 Domestic only mi.",
+      "broker/John",
+      "800 239 8269 Virgin specialist"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1529",
+   "name": "TWA",
+   "parts": [
+    {
+     "page": 90,
+     "column": 1,
+     "lines": [
+      "TWA",
+      "001 800 221 2000",
+      "#188925144 frequent flier num-",
+      "bers (GM)",
+      "34663436 frequent flier number",
+      "(JE)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1530",
+   "name": "United Airlines",
+   "parts": [
+    {
+     "page": 90,
+     "column": 1,
+     "lines": [
+      "United Airlines",
+      "001 800 241 6522",
+      "#00385250614 frequent flier #",
+      "G.M.",
+      "00316924999 frequent flyer # J.E."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1531",
+   "name": "US Air",
+   "parts": [
+    {
+     "page": 90,
+     "column": 2,
+     "lines": [
+      "US Air",
+      "Frequent Traveler Center",
+      "P.O. Box 5,",
+      "Winston Salem, NC 27102-0005",
+      "001 800 872 4738",
+      "001 800 428 4322 (",
+      "001 800 428 4322",
+      "#138515311 frequent flier number",
+      "(GM)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1532",
+   "name": "USA International",
+   "parts": [
+    {
+     "page": 90,
+     "column": 2,
+     "lines": [
+      "USA International",
+      "218 West 47th Street (B'Way)",
+      "New York, NY"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1533",
+   "name": "Virgin Atlantic Airways",
+   "parts": [
+    {
+     "page": 90,
+     "column": 2,
+     "lines": [
+      "Virgin Atlantic Airways",
+      "029-356-200",
+      "001 800 862 8621",
+      "#00 900 043 506 frequent flier",
+      "number (GM)",
+      "00 779 044 628 frequent flier",
+      "number (JE)"
+     ]
+    }
+   ]
+  }
+ ]
+}

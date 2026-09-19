@@ -1,0 +1,230 @@
+{
+ "page": 1,
+ "reviewed_on": "2026-09-19",
+ "method": "Visual comparison of every entry on the original PDF scan; enlarged crops for ambiguous readings.",
+ "source_sha256": "4f8e111d7bd29039742de62e9f67cf5051b617e26a923117df323a5d2fb3c0de",
+ "entries": [
+  {
+   "id": "E0001",
+   "name": "Abby",
+   "parts": [
+    {
+     "page": 1,
+     "column": 1,
+     "lines": [
+      "Abby",
+      "07944 574 202"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0002",
+   "name": "Abousleiman, Joanna",
+   "parts": [
+    {
+     "page": 1,
+     "column": 1,
+     "lines": [
+      "Abousleiman, Joanna",
+      "0603 338 787",
+      "Email:",
+      "joannachevalier@hotmail.c"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0003",
+   "name": "Adam, Nick",
+   "parts": [
+    {
+     "page": 1,
+     "column": 1,
+     "lines": [
+      "Adam, Nick",
+      "19 Rue De Lille",
+      "75007, Paris",
+      "00 331 538 97260(w)",
+      "00 331 40150061(h)",
+      "00 33 607 341 980 (p)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0004",
+   "name": "Agag Alejandro",
+   "parts": [
+    {
+     "page": 1,
+     "column": 1,
+     "lines": [
+      "Agag Alejandro",
+      "00 44 771 730 6038",
+      "Email:",
+      "aagag@aslinvestments.com"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0005",
+   "name": "Agnew, Marie Claire & John",
+   "parts": [
+    {
+     "page": 1,
+     "column": 1,
+     "lines": [
+      "Agnew, Marie Claire & John",
+      "51 Eaton Square",
+      "London SW1 0QY,",
+      "0207-235 7589 (h)",
+      "0207 621 0011 (w)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0006",
+   "name": "Alai Azzedine",
+   "parts": [
+    {
+     "page": 1,
+     "column": 1,
+     "lines": [
+      "Alai Azzedine",
+      "00 331 4272 1919"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0007",
+   "name": "Albermarle, Rufus & Sally",
+   "parts": [
+    {
+     "page": 1,
+     "column": 1,
+     "lines": [
+      "Albermarle, Rufus & Sally",
+      "511 6th Ave",
+      "p.o. box 394",
+      "New York, NY 10011",
+      "1 212 465 9867(w)",
+      "Email: rufusa@mac.com",
+      "1 917 969 2158 (p) Rufus",
+      "1 917 257 9735 (p) Sally",
+      "212 271 3481 (try his first)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0008",
+   "name": "Aldridge Saffron",
+   "parts": [
+    {
+     "page": 1,
+     "column": 2,
+     "lines": [
+      "Aldridge Saffron",
+      "47 Ladbroke Rd",
+      "London W11 3PD",
+      "0207-727 1006",
+      "001 212-879-7653",
+      "Email: saffya@aol.com",
+      "0207-221-3627"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0009",
+   "name": "Alexander Pam",
+   "parts": [
+    {
+     "page": 1,
+     "column": 2,
+     "lines": [
+      "Alexander Pam",
+      "01 415 644 3055(w)",
+      "01 415 515 9708(p)",
+      "Email: palexander@alexanderrogil"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0010",
+   "name": "Algranti Giacomo",
+   "parts": [
+    {
+     "page": 1,
+     "column": 2,
+     "lines": [
+      "Algranti Giacomo",
+      "Flat 4 83 Duke St",
+      "83 Duke St",
+      "Flat 4",
+      "London, W1",
+      "0207-493 6171",
+      "0385 261 390",
+      "0208-969 0027 (h)",
+      "0208-746 1181 (w)",
+      "0207-746 1157 (f)",
+      "0207-930 3703 (gw)",
+      "0386 438 218 (p)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0011",
+   "name": "Allan Paul",
+   "parts": [
+    {
+     "page": 1,
+     "column": 2,
+     "lines": [
+      "Allan Paul",
+      "001 206 355 5777",
+      "Email: paul@vulcan.com"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0012",
+   "name": "Allan, Nick & Sarah",
+   "parts": [
+    {
+     "page": 1,
+     "column": 2,
+     "lines": [
+      "Allan, Nick & Sarah",
+      "B5 Banyan Villas",
+      "9 Stanley Village Road",
+      "Hong Kong,",
+      "00-852-813-0762"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0013",
+   "name": "Althorp, Charlie",
+   "parts": [
+    {
+     "page": 1,
+     "column": 2,
+     "lines": [
+      "Althorp, Charlie",
+      "Althorp",
+      "0207-229 1573 (h)"
+     ]
+    }
+   ]
+  }
+ ]
+}

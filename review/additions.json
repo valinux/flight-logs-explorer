@@ -1,0 +1,177 @@
+{
+ "source_sha256": "4f8e111d7bd29039742de62e9f67cf5051b617e26a923117df323a5d2fb3c0de",
+ "reviewed_on": "2026-09-19",
+ "entries": [
+  {
+   "id": "E1615",
+   "name": "Visitors Massage (P.B)",
+   "page": 93,
+   "column": 1,
+   "bbox": [
+    185,
+    40,
+    440,
+    90
+   ],
+   "lines": [
+    "Visitors Massage (P.B)"
+   ]
+  },
+  {
+   "id": "E1616",
+   "name": "Important e-mail / addresses",
+   "page": 95,
+   "column": 1,
+   "bbox": [
+    165,
+    85,
+    445,
+    115
+   ],
+   "lines": [
+    "Important e-mail / addresses"
+   ]
+  },
+  {
+   "id": "E1617",
+   "name": "Unassigned source fragment — page 62",
+   "kind": "Unassigned source fragment",
+   "page": 62,
+   "column": 1,
+   "bbox": [
+    265,
+    277.25,
+    387,
+    303.25
+   ],
+   "lines": [
+    "London",
+    "SW1X 7PA"
+   ],
+   "notes": "These two address lines appear at the start of page62 without an identifiable heading. Their association cannot be established from the scan; they are not assigned to the preceding New York restaurant."
+  },
+  {
+   "id": "E1618",
+   "name": "FRANCE (FR)",
+   "page": 64,
+   "column": 1,
+   "bbox": [
+    263,
+    496,
+    380,
+    515
+   ],
+   "lines": [
+    "FRANCE (FR)"
+   ]
+  },
+  {
+   "id": "E1619",
+   "name": "PB",
+   "page": 85,
+   "column": 2,
+   "bbox": [
+    369,
+    314,
+    391,
+    328
+   ],
+   "lines": [
+    "PB"
+   ]
+  },
+  {
+   "id": "E1620",
+   "name": "SECURITY (SC)",
+   "page": 87,
+   "column": 4,
+   "bbox": [
+    607,
+    529,
+    741,
+    545
+   ],
+   "lines": [
+    "SECURITY (SC)"
+   ]
+  },
+  {
+   "id": "E1621",
+   "name": "HOTELS (HT)",
+   "page": 66,
+   "column": 4,
+   "bbox": [
+    601,
+    476,
+    735,
+    490
+   ],
+   "lines": [
+    "HOTELS (HT)"
+   ]
+  },
+  {
+   "id": "E1622",
+   "name": "ITALY (I)",
+   "page": 68,
+   "column": 4,
+   "bbox": [
+    601,
+    395,
+    735,
+    409
+   ],
+   "lines": [
+    "ITALY (I)"
+   ]
+  },
+  {
+   "id": "E1623",
+   "name": "JEFFREY (J)",
+   "page": 68,
+   "column": 4,
+   "bbox": [
+    601,
+    485,
+    735,
+    500
+   ],
+   "lines": [
+    "JEFFREY (J)"
+   ]
+  },
+  {
+   "id": "E1624",
+   "name": "London Airways",
+   "kind": "Entry / source block",
+   "page": 89,
+   "column": 1,
+   "bbox": [
+    252,
+    394,
+    340,
+    416
+   ],
+   "lines": [
+    "London Airways",
+    "0207-403 2228"
+   ],
+   "notes": "Separate source entry previously merged into Kent, Geoffrey by OCR segmentation."
+  },
+  {
+   "id": "E1625",
+   "name": "RM",
+   "page": 91,
+   "column": 4,
+   "bbox": [
+    626,
+    453,
+    652,
+    471
+   ],
+   "lines": [
+    "RM"
+   ]
+  }
+ ]
+}

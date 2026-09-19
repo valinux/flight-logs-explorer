@@ -1,0 +1,401 @@
+{
+ "page": 62,
+ "reviewed_on": "2026-09-19",
+ "method": "Visual comparison of every entry on the original PDF scan; enlarged crops for ambiguous readings.",
+ "source_sha256": "4f8e111d7bd29039742de62e9f67cf5051b617e26a923117df323a5d2fb3c0de",
+ "entries": [
+  {
+   "id": "E1069",
+   "name": null,
+   "parts": [
+    {
+     "page": 62,
+     "column": 1,
+     "lines": [
+      "London",
+      "SW1X 7PA"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1070",
+   "name": "Myers of Westwick",
+   "parts": [
+    {
+     "page": 62,
+     "column": 1,
+     "lines": [
+      "Myers of Westwick",
+      "Pork Pies, Pork Sauages",
+      "634 Hudson Street",
+      "New York, NY",
+      "212 691-4194"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1071",
+   "name": "Nicolas",
+   "parts": [
+    {
+     "page": 62,
+     "column": 1,
+     "lines": [
+      "Nicolas",
+      "001 212 249 9850"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1072",
+   "name": "Opia",
+   "parts": [
+    {
+     "page": 62,
+     "column": 1,
+     "lines": [
+      "Opia",
+      "antoine Blech",
+      "917 751 4551",
+      "212 688 3939"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1073",
+   "name": "Peninsula Hotel",
+   "parts": [
+    {
+     "page": 62,
+     "column": 1,
+     "lines": [
+      "Peninsula Hotel",
+      "mathew bartle (mgr)",
+      "9882 South Santa Monica Blvd",
+      "Beverly Hills",
+      "Los Angeles, CA 90212",
+      "310 551 2888",
+      "310 788 2319 (f)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1074",
+   "name": "Peninsulla Hotel",
+   "parts": [
+    {
+     "page": 62,
+     "column": 1,
+     "lines": [
+      "Peninsulla Hotel",
+      "700 Fifth Avenue",
+      "New York. NY 10019",
+      "212-247-2200",
+      "212-903-3949"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1075",
+   "name": "Pierre Hotel",
+   "parts": [
+    {
+     "page": 62,
+     "column": 2,
+     "lines": [
+      "Pierre Hotel",
+      "2 East 61st Street",
+      "New York, NY 10021",
+      "212-838-8000"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1076",
+   "name": "Plaza",
+   "parts": [
+    {
+     "page": 62,
+     "column": 2,
+     "lines": [
+      "Plaza",
+      "001 212 759 3000"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1077",
+   "name": "Plaza Athenee Hotel",
+   "parts": [
+    {
+     "page": 62,
+     "column": 2,
+     "lines": [
+      "Plaza Athenee Hotel",
+      "Trust House 40",
+      "37 East 64th Street",
+      "New York. NY 10021",
+      "212-734-9100"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1078",
+   "name": "Province Restaurant",
+   "parts": [
+    {
+     "page": 62,
+     "column": 2,
+     "lines": [
+      "Province Restaurant",
+      "between Mcdougal & Prince"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1079",
+   "name": "Ritz Carlton",
+   "parts": [
+    {
+     "page": 62,
+     "column": 2,
+     "lines": [
+      "Ritz Carlton",
+      "001 212 757 1900"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1080",
+   "name": "Royalton",
+   "parts": [
+    {
+     "page": 62,
+     "column": 2,
+     "lines": [
+      "Royalton",
+      "44 West 44th St.",
+      "(between 5th & 6th)",
+      "212-869-4400"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1081",
+   "name": "Sette Mezzo",
+   "parts": [
+    {
+     "page": 62,
+     "column": 2,
+     "lines": [
+      "Sette Mezzo",
+      "969 Lexington",
+      "New York"
+     ]
+    },
+    {
+     "page": 62,
+     "column": 3,
+     "lines": [
+      "0101 212 472 0400"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1082",
+   "name": "Shoes-Repair",
+   "parts": [
+    {
+     "page": 62,
+     "column": 3,
+     "lines": [
+      "Shoes-Repair",
+      "Shoe Service Plus",
+      "15 West 55th Street",
+      "001 212 262 4823"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1083",
+   "name": "Shutters on the Beach",
+   "parts": [
+    {
+     "page": 62,
+     "column": 3,
+     "lines": [
+      "Shutters on the Beach",
+      "1 Pico Blvd.",
+      "Santa Monica, CA 90405",
+      "310 458 0030 (t)",
+      "310 458 4589 (f)",
+      "800-334-9000"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1084",
+   "name": "Sotheby's",
+   "parts": [
+    {
+     "page": 62,
+     "column": 3,
+     "lines": [
+      "Sotheby's",
+      "JE Acct# 3011 4352",
+      "GM Acct# 3062 4014",
+      "1334 York Ave",
+      "NY. NY 10021",
+      "001 212 608 7000",
+      "0207-493 8080",
+      "(Hm)34-35 New Bond Street",
+      "London",
+      "W1A 2AA",
+      "001 212 606 7423 Sully",
+      "001 212 606 7683 Sotheby's",
+      "Realestate-Meredith",
+      "0207 293 5000 UK",
+      "212 431 2424 Real Estate-Steve",
+      "Mcguire"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1085",
+   "name": "St Regis Hotel",
+   "parts": [
+    {
+     "page": 62,
+     "column": 3,
+     "lines": [
+      "St Regis Hotel",
+      "2 East 55th St",
+      "betn 5th/Mad",
+      "New York. NY 10022",
+      "001 212 753 4500"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1086",
+   "name": "Stanhope Hotel",
+   "parts": [
+    {
+     "page": 62,
+     "column": 4,
+     "lines": [
+      "Stanhope Hotel",
+      "212 774 1234"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1087",
+   "name": "Sunset Marquee",
+   "parts": [
+    {
+     "page": 62,
+     "column": 4,
+     "lines": [
+      "Sunset Marquee",
+      "0101 213 657 1333"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1088",
+   "name": "Tao Restaurant",
+   "parts": [
+    {
+     "page": 62,
+     "column": 4,
+     "lines": [
+      "Tao Restaurant",
+      "42 E. 58th Street",
+      "bet. Madison/Park",
+      "001 212 888 2288"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1089",
+   "name": "Taylor, The",
+   "parts": [
+    {
+     "page": 62,
+     "column": 4,
+     "lines": [
+      "Taylor, The",
+      "300 East 82nd Street",
+      "001 212 535 8940"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1090",
+   "name": "The Great American Health Bar",
+   "parts": [
+    {
+     "page": 62,
+     "column": 4,
+     "lines": [
+      "The Great American",
+      "Health Bar",
+      "35 West 57th Street",
+      "New York",
+      "0101 212 355 5177"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1091",
+   "name": "The Lowell",
+   "parts": [
+    {
+     "page": 62,
+     "column": 4,
+     "lines": [
+      "The Lowell",
+      "0101 212 838 1400"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1092",
+   "name": "The Westbury",
+   "parts": [
+    {
+     "page": 62,
+     "column": 4,
+     "lines": [
+      "The Westbury",
+      "0101 212 535 2000"
+     ]
+    }
+   ]
+  }
+ ]
+}

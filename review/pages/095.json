@@ -1,0 +1,271 @@
+{
+ "page": 95,
+ "reviewed_on": "2026-09-19",
+ "method": "Visual comparison of every entry on the original PDF scan; enlarged crops for ambiguous readings.",
+ "source_sha256": "4f8e111d7bd29039742de62e9f67cf5051b617e26a923117df323a5d2fb3c0de",
+ "entries": [
+  {
+   "id": "E1604",
+   "name": "Jeffrey E. Epstein",
+   "parts": [
+    {
+     "page": 95,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792.0
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Jeffrey E. Epstein",
+      "jeffreye@mindspring.com (P.B.)",
+      "jeeproject@yahoo.com (N.Y.)",
+      "zorroranch@aol.com (N.M.)",
+      "epstein@wanadoo.fr (Paris)",
+      "[Source annotation: starred and underlined.]"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1605",
+   "name": "Ghislaine Maxwell",
+   "parts": [
+    {
+     "page": 95,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792.0
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Ghislaine Maxwell",
+      "gmex1@mindspring.com (NY)",
+      "[Source annotation: three stars and underline.]"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1606",
+   "name": "Tim Newcombe",
+   "parts": [
+    {
+     "page": 95,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792.0
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Tim Newcombe",
+      "Citrix Systems Programmer",
+      "- In House -",
+      "(614) 361-8625 Cell.",
+      "(614) 481-7628 H."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1607",
+   "name": "Charley Palmer",
+   "parts": [
+    {
+     "page": 95,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792.0
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Charley Palmer",
+      "(Chef - Aureole Restaurant) NYC",
+      "([unclear]12) 755-7050"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1608",
+   "name": "Joe Pegaro",
+   "parts": [
+    {
+     "page": 95,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792.0
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Joe Pegaro",
+      "(Chef - Aspen, Co.)",
+      "([unclear]70) 274-0323"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1609",
+   "name": "Christophe",
+   "parts": [
+    {
+     "page": 95,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792.0
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Christophe",
+      "(French Driver) P.B.",
+      "(561) 350-1700",
+      "(561) 233-7742",
+      "(561) 233-7740",
+      "[Source annotation: arrow to \"(Jet Aviation)\"; marginal note \"Important Witness\".]"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1610",
+   "name": "Handwritten note - Secret Service / Barak, Ehud",
+   "parts": [
+    {
+     "page": 95,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792.0
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Secret Service Personal escorting",
+      "Mr. Barak, Ehud Former P.M. of Israel on",
+      "J. Epstein planes."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1611",
+   "name": "Jean-Luc Brunel",
+   "parts": [
+    {
+     "page": 95,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792.0
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Jean-Luc Brunel",
+      "Karin Models",
+      "(212) 226-4100",
+      "[Source annotation, not an independently verified assertion: \"Scout\" for young females...]",
+      "[Source annotation: stars and arrow.]"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1612",
+   "name": "David Copperfield",
+   "parts": [
+    {
+     "page": 95,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792.0
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "David Copperfield",
+      "(Magician)",
+      "(702) 235-5555"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1613",
+   "name": "Eve Andersson (Dubin)",
+   "parts": [
+    {
+     "page": 95,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792.0
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Eve Andersson",
+      "(Dubin)",
+      "(Former model & mother of naked pic.)",
+      "(212) 288-4844"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1614",
+   "name": "David Cook",
+   "parts": [
+    {
+     "page": 95,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792.0
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "David Cook Palm Beach (2004-2005) Witness,",
+      "interacted and chat daily w/ underage girls."
+     ]
+    }
+   ]
+  }
+ ]
+}

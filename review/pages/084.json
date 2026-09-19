@@ -1,0 +1,477 @@
+{
+ "page": 84,
+ "reviewed_on": "2026-09-19",
+ "method": "Visual comparison of every entry on the original PDF scan; enlarged crops for ambiguous readings.",
+ "source_sha256": "4f8e111d7bd29039742de62e9f67cf5051b617e26a923117df323a5d2fb3c0de",
+ "entries": [
+  {
+   "id": "E1398",
+   "name": "Stichcraft",
+   "parts": [
+    {
+     "page": 84,
+     "column": 1,
+     "lines": [
+      "Stichcraft",
+      "071-629 7919"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1399",
+   "name": "Tobias, Maxine",
+   "parts": [
+    {
+     "page": 84,
+     "column": 1,
+     "lines": [
+      "Tobias, Maxine",
+      "Yoga -UK",
+      "0207-351 7690",
+      "00 631 329 3869",
+      "Email: maxinelena@aol.com",
+      "07767 655220 (p)",
+      "516 329 3869"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1400",
+   "name": "Unlisted London",
+   "parts": [
+    {
+     "page": 84,
+     "column": 1,
+     "lines": [
+      "Unlisted London",
+      "Contact: Debbie Nichols",
+      "0870 225 5007 (W)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1401",
+   "name": "Yara",
+   "parts": [
+    {
+     "page": 84,
+     "column": 1,
+     "lines": [
+      "Yara",
+      "0207-349 0652"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1402",
+   "name": "MEDICAL",
+   "parts": [
+    {
+     "page": 84,
+     "column": 1,
+     "lines": [
+      "MEDICAL"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1403",
+   "name": "Birnbaum, Dr",
+   "parts": [
+    {
+     "page": 84,
+     "column": 1,
+     "lines": [
+      "Birnbaum, Dr",
+      "449 East 68th Street",
+      "at York",
+      "Suite 8 Second floor",
+      "NY, NY 10021",
+      "212 628 1500",
+      "212 288 5760(f)",
+      "John Scobell"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1404",
+   "name": "Burman, Dr.",
+   "parts": [
+    {
+     "page": 84,
+     "column": 1,
+     "lines": [
+      "Burman, Dr.",
+      "Vet for Max",
+      "52 East 64th Street",
+      "New York, NY 10021",
+      "212-832-8417"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1405",
+   "name": "Chiropractor",
+   "parts": [
+    {
+     "page": 84,
+     "column": 2,
+     "lines": [
+      "Chiropractor",
+      "Dr. Dean",
+      "Chiropractor",
+      "2067 Broadway between",
+      "71st & 72nd.",
+      "212 712-2195"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1406",
+   "name": "Chiropractor",
+   "parts": [
+    {
+     "page": 84,
+     "column": 2,
+     "lines": [
+      "Chiropractor",
+      "Chiropractor",
+      "Calakos, Dr. Dean",
+      "370 Columbus Ave.",
+      "(between 77th & 78th streets)",
+      "1F",
+      "NY, NY 10023",
+      "212 712 2195"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1407",
+   "name": "Cope, Bruce",
+   "parts": [
+    {
+     "page": 84,
+     "column": 2,
+     "lines": [
+      "Cope, Bruce",
+      "GM Dentist",
+      "2 Harcourt House",
+      "19A Cavendish Square",
+      "London, UK W1M 9AD",
+      "0207-580 0648(w)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1408",
+   "name": "Dr. Bruno",
+   "parts": [
+    {
+     "page": 84,
+     "column": 2,
+     "lines": [
+      "Dr. Bruno",
+      "535 Park Avenue",
+      "New York, NY 10021",
+      "212 838 3155"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1409",
+   "name": "Dr. Dean Calakos",
+   "parts": [
+    {
+     "page": 84,
+     "column": 2,
+     "lines": [
+      "Dr. Dean Calakos",
+      "370 Columbus Avenue",
+      "#1F",
+      "New York, NY 10024",
+      "212 712 2195"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1410",
+   "name": "Dr. Farkus",
+   "parts": [
+    {
+     "page": 84,
+     "column": 2,
+     "lines": [
+      "Dr. Farkus",
+      "30 East 60th Street",
+      "201 Floor",
+      "212 355 5145"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1411",
+   "name": "Dr. Ray, Dr. Kashel",
+   "parts": [
+    {
+     "page": 84,
+     "column": 2,
+     "lines": [
+      "Dr. Ray, Dr. Kashel",
+      "Paula's Dr.'s",
+      "561-478-1104"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1412",
+   "name": "Dr. Schimoni",
+   "parts": [
+    {
+     "page": 84,
+     "column": 3,
+     "lines": [
+      "Dr. Schimoni",
+      "212 751 5066 (w)",
+      "917 922 7391 (p)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1413",
+   "name": "Ear Conning",
+   "parts": [
+    {
+     "page": 84,
+     "column": 3,
+     "lines": [
+      "Ear Conning",
+      "310 West 72nd Street",
+      "NY, NY",
+      "001 212 580 3333"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1414",
+   "name": "Gaynor, Dr J R",
+   "parts": [
+    {
+     "page": 84,
+     "column": 3,
+     "lines": [
+      "Gaynor, Dr J R",
+      "79 Cadogan Place",
+      "London",
+      "SW1X 9RP.",
+      "0207-351 3454 (h)",
+      "0836 236965",
+      "0207- 351 6801 (h)",
+      "0207-730 3700 (w)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1415",
+   "name": "Hirshfield, Dr.",
+   "parts": [
+    {
+     "page": 84,
+     "column": 3,
+     "lines": [
+      "Hirshfield, Dr.",
+      "614-864-6016 (f)",
+      "614-252-2034 (h)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1416",
+   "name": "Ishmail",
+   "parts": [
+    {
+     "page": 84,
+     "column": 3,
+     "lines": [
+      "Ishmail",
+      "177 Prince Street",
+      "(between Prince & Thompson)",
+      "212 353 2038",
+      "917 865 0394"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1417",
+   "name": "Kent, Susan DVM",
+   "parts": [
+    {
+     "page": 84,
+     "column": 3,
+     "lines": [
+      "Kent, Susan DVM",
+      "Park East Animal Hospital",
+      "52 East 64th Street",
+      "NY, NY 10021",
+      "212-832-8417"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1418",
+   "name": "Krumholtz, Dr. Michael",
+   "parts": [
+    {
+     "page": 84,
+     "column": 3,
+     "lines": [
+      "Krumholtz, Dr. Michael",
+      "111 East 80th Street",
+      "NY, NY 10021",
+      "212 734 5533"
+     ]
+    },
+    {
+     "page": 84,
+     "column": 4,
+     "lines": [
+      "212 717 1688 fax"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1419",
+   "name": "Lee, Dr.",
+   "parts": [
+    {
+     "page": 84,
+     "column": 4,
+     "lines": [
+      "Lee, Dr.",
+      "614-868-5966",
+      "614-457-9585 (h)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1420",
+   "name": "Lister Hospital",
+   "parts": [
+    {
+     "page": 84,
+     "column": 4,
+     "lines": [
+      "Lister Hospital",
+      "0207-730 3417",
+      "0207-235 2672"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1421",
+   "name": "Magnani, Dr.",
+   "parts": [
+    {
+     "page": 84,
+     "column": 4,
+     "lines": [
+      "Magnani, Dr.",
+      "501 Madison Ave. Suite 2101",
+      "(btwn 52nd and 53rd St)",
+      "New York, NY 10022",
+      "212 688 1090",
+      "203 629 5608(h)",
+      "212 755 3156 fax"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1422",
+   "name": "Medical",
+   "parts": [
+    {
+     "page": 84,
+     "column": 4,
+     "lines": [
+      "Medical",
+      "4311440*01 Oxford ID num-",
+      "ber(gm)",
+      "13378 4883 Prudential ID num-",
+      "ber(gm)dental"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1423",
+   "name": "MedLink Emergency",
+   "parts": [
+    {
+     "page": 84,
+     "column": 4,
+     "lines": [
+      "MedLink Emergency",
+      "001602 239 3627"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1424",
+   "name": "Meltzer, J. Dr.",
+   "parts": [
+    {
+     "page": 84,
+     "column": 4,
+     "lines": [
+      "Meltzer, J. Dr.",
+      "903 Park Avenue",
+      "New York, NY",
+      "212-988-4488",
+      "212 535 4796fax"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1425",
+   "name": "Moskowitz, Dr. Bruce",
+   "parts": [
+    {
+     "page": 84,
+     "column": 4,
+     "lines": [
+      "Moskowitz, Dr. Bruce",
+      "1411 North Flagler Drive",
+      "Suite 9300",
+      "WPB, FL 33401",
+      "561 833 6116 (w)"
+     ]
+    }
+   ]
+  }
+ ]
+}

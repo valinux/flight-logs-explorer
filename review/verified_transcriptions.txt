@@ -1,0 +1,320 @@
+# Source-reviewed transcriptions. @@ starts an entry; @ gives PDF page and column.
+# Square brackets describe uncertainty; they are not source text.
+@@ E0155 | Chatwal, Vikram
+@ 11 1
+Chatwal, Vikram
+Hampshire Hotels & Resorts
+595 Eleventh Ave.
+bet. 44th & 45th St.
+New York, NY 10036
+1 212 474 9880 (w)
+1 212 320 2900
+(Hm)1 Central Park West #32F
+10023
+1 917 442 7425 (p)
+@@ E0156 | Chenevix-Trench, John & Lucy
+@ 11 1
+Chenevix-Trench, John
+& Lucy
+4 Albert Place
+London, W8 5PD
+0207-376-1193
+0385 778862
+00 33 53 90 3937 (c)
+0207-425 7672 (w)
+0207-376 1193 (f)
+@@ E0157 | Cicogna Gianluca
+@ 11 1
+Cicogna Gianluca
+1020 5th Avenue
+14th floor
+New York, NY 10028
+001 646 521 8510(w)
+0207-225 0350(h)
+Email: gc@zanett.com
+001 212 388 0224 (h)
+001 917 554 8110 (p)
+@@ E0158 | Cicogna, Geoconda
+@ 11 1
+Cicogna, Geoconda
+15 Queens Gate Gdns
+London SW7,
+0207-589 1953/581 451 (h)
+@ 11 2
+00 34 52 855247 (marb)
+00 34 52 855010 (little house)
+@@ E0159 | Cicogna, Gianfranco
+@ 11 2
+Cicogna, Gianfranco
+70a Fulham Road
+London SW3,
+Email: gcicogna@ursustel.net
+0207-584 5656 (f)
+0207-581 3880 (h)
+00 27 11 8041996 (f)
+071 976 1224 (fax)
+0860 363891
+010 27 54 33 11191 (S. Africa-h)
+00 27 833 23 0000 (p)
+@@ E0160 | Cicogna, Marina
+@ 11 2
+Cicogna, Marina
+00 39 6 6788234 (Rome)
+00 39 6 9026023 (Rome)
+00 41 82 34584 (S t M)
+@@ E0161 | Cicognani, Pietro & Alejandra
+@ 11 2
+Cicognani, Pietro
+&Alejandra
+125E 74th St
+New York, NY 10021
+001 212628 7661(h)
+001 212 245 4860(w)
+001 212 249 8812 (h)
+001 212 308 4811 (w)
+001 212 249 7514 (w)
+@@ E0162 | Cierach, Linska
+@ 11 2
+Cierach, Linska
+The Studio
+1c Clareville Grove
+London
+SW7 3AU,
+@ 11 3
+0207 373 3131
+0468 275 050(p)
+@@ E0163 | Cipriani Guiseppi
+@ 11 3
+Cipriani Guiseppi
+212 499 0599 (w)
+917 353 3445 (p)
+@@ E0164 | Cisneros, Gustavo and Patty
+@ 11 3
+Cisneros, Gustavo and
+Patty
+950 5th Avenue
+New York, New York 10021
+001 212 717-5880 (h)
+@@ E0165 | Claverino, Amadeo
+@ 11 3
+Claverino, Amadeo
+00 39 2 600 3666 (h)
+00 39 2 583 05 007 (w)
+@@ E0166 | Claverino, Isabel
+@ 11 3
+Claverino, Isabel
+00 3902 7231 8479
+011 39 0272 3181(w)
+(Hm)00 39 335 820 0541
+@@ E0167 | Cleese John Alice Fay
+@ 11 3
+Cleese John Alice Fay
+sec gary
+0207-229 6344(h)
+0207-221 2472(w)
+@@ E0168 | Clempson, Graham & Emma
+@ 11 3
+Clempson, Graham &
+Emma
+30 Sloane Court West
+London SW3,
+@ 11 4
+0207-730 2851 (h)
+0207-982 2085 (w)
+@@ E0169 | Clive, Lucy
+@ 11 4
+Clive, Lucy
+45 Elgin Crescent
+London
+W11 2JU
+0207-221-7677 (h)
+07957-544-262 (p)
+Email: lclive@boden.co.uk
+0208-453-1345 work
+001-908-234-2554 New Jersey
+0207-235-1186 Uncle
+001 516 353 1926 (p)
+@@ E0170 | Coben, Larry
+@ 11 4
+Coben, Larry
+Sunrise Capital Partners
+101 W 12th Street Appt 35
+NY NY 10011 USA
+001 212 996 6266
+212 582 3015 (w)
+Email: lcoben@hlhz.com
+(Hm)685 Third Ave, 15th floor
+New York, NY 10017-4024
+001 212 675 3385 (h)
+001212 582 3015 (w)
+212 497 4259 direct dial (w)
+@@ E0171 | Cochrane, Ms Mandy
+@ 11 4
+Cochrane, Ms Mandy
+2 Poplar Grove
+London W6 7RF
+0494 672492 (w)
+0207-603 6807 (h)
+@@ E0172 | Cohen Dalit
+@ 11 4
+Cohen Dalit
+76 Elm Park Mansions
+@ 12 1
+Park Walk
+London SW10
+0207-995 8984(w)
+0207-349 0310(h)
+07 880 736 286 cell
+0207 573 0055 (wf)
+@@ E0173 | Cohen Peter
+@ 12 1
+Cohen Peter
+400 South Point Drive
+Apt. 2402
+Miami Beach
+FL. 33139
+001 305 531 5370(h)
+001 305 772 3966(p)
+Email: peter@thebox.com
+305 588 9938
+@@ E0174 | Coleman, Jo
+@ 12 1
+Coleman, Jo
+001 212 260 7210 (w)
+001 212 751 8654(h)
+(Hm)166 E. 63rd St.
+12A
+New York
+NY10021,
+@@ E0175 | Coleridge, Nicholas & Georgia
+@ 12 1
+Coleridge, Nicholas &
+Georgia
+38 Princedale Road
+London, W11 4NL
+01144 207 221 4293(h
+Email:
+ncoleridge@condenast.co.u
+020 7499 9080 Nick (w)
+020 7499 0052 Nick (wf)
+020 7221 4293 (h)
+@@ E0176 | Colle Jeffrey
+@ 12 2
+Colle Jeffrey
+001 212 308 8555(w)
+001 212 988 4410(h)
+001 407 798 0808(h)
+001 516 537 2203(h)
+001 516 324 8500 (w)
+001 516 443 8500(p)
+@@ E0177 | Collins Phil & Orianne
+@ 12 2
+Collins Phil & Orianne
+41 22 994 40 14 (w)
+Email: oriannecollins@littledrea
+41 22 994 40 11(h)
+41 79 414 94 05(p)
+@@ E0178 | Conrad, Henrietta
+@ 12 2
+Conrad, Henrietta
+4a Pembridge Mews
+London W11,
+0207-221 6370 (h)
+07831 372264 (ph)
+0207-792 3933 fax
+0207-712 9300 (w)
+72435101
+@@ E0179 | Constantine, Susannah Sten Ber
+@ 12 2
+Constantine, Susannah
+Sten Ber
+40 Brymer Rd
+London, SW11 4EW
+0207-376 3212(w)
+0207 720 8882(h)
+Email:
+SContantine@breathmail.ne
+(Hm)Susannah@ready2.com(w)
+0797 181 5695(p)
+00 33 9054 3592 (Fra)
+@@ E0180 | Cooke, Clive
+@ 12 3
+Cooke, Clive
+Home:
+721 Fifth Avenue #63H
+New York, NY 10022
+001 212 421 5085 (h)
+001 212 668 9668(w)
+NY, NY 10038. W: 199 Water
+Street
+W: 001 212 668 9668
+516 283 1839 Southampton:
+07 715 172 772
+@@ E0181 | Cordle, Ms Rachel
+@ 12 3
+Cordle, Ms Rachel
+54A Radcliffe Square
+London SW15 6BL
+0207-370 3943 (h)
+0207-581 7034 (w)
+@@ E0182 | Cordle, Rupert & Camilla
+@ 12 3
+Cordle, Rupert &
+Camilla
+33 Albert Bridge rd
+London
+SW11 4PX
+0207-738 8997
+0836 323616 (Cp)
+Email: rupert.cordle@ukonline.co
+(Hm)34C Albert Bridge Road (w)
+London SW11 4PY
+207 498 5649(w)
+07831 584 053 (Rp)
+207 498 5689 (Asst. Alise)
+@@ E0183 | Cordova Hohenlohe, Fernando de
+@ 12 3
+Cordova Hohenlohe,
+Fernando de
+Bidasoa #6
+28002 Madrid
+120 1/2 East 65th St.
+@ 12 4
+New York, NY 10021
+001 212 772 1029
+00 34 11 75 75 Spain
+001 212 826 7425 (w)
+001 212 421 1430 (h)
+@@ E0184 | Cotterell, Harry
+@ 12 4
+Cotterell, Harry
+Byford Court
+Byford, Herefordshire
+HR4 7LD
+0981-22227 (h)
+@@ E0185 | Courcel Martine De
+@ 12 4
+Courcel Martine De
+00 33 6 07 55 96 99
+@@ E0186 | Cowdray, Marina
+@ 12 4
+Cowdray, Marina
+The Viscountess Cowd
+Cowdray House
+Cowdray Park, Midhurst
+West Sussex
+GU29 OAX,
+01730 812461
+01730 812122 (f)
+Email:
+house@cowdray.demon.co.uk
+@@ E0187 | Cowie, Colin
+@ 12 4
+Cowie, Colin
+11 E. 68th Street
+New York, NY 10021
+001 212 396 9007
+001 212 396 9012(f)
+Email: cawcowie@aol.com
+001 917 601 1203 Stuart
+917-667-7870 Colin Portable

@@ -1,307 +1,75 @@
 #!/usr/bin/env python3
-"""Parse tesseract TSV output (per-column crops) into structured contacts.
+"""Build synchronized contact exports from the source-linked review workbook.
 
-Input:  ocr/page-XXX<band>.tsv  (psm 4 word-level TSV with bounding boxes)
-Output: contacts.json, contacts.csv
-Also cross-references contact names against passengers in flights.json.
+Run this after updating Contact_directory_review.xlsx, then run build.py to embed
+these data in the explorer. No OCR, network or third-party packages needed.
 """
 import csv
-import glob
 import json
-import re
-import statistics
-from pathlib import Path
+from collections import defaultdict
 
-OCR_DIR = Path("ocr")
+from build_xref import build_matches
+from contact_data import ROOT, astra_record, load_contacts, phone_text, quality_report, write_json
 
-# handwritten pages: OCR output is garbage, replaced by manual transcriptions
-HANDWRITTEN_PAGES = {93, 94, 95}
-
-DIGIT_FIX = str.maketrans({
-    "O": "0", "o": "0", "Q": "0",
-    "l": "1", "I": "1", "|": "1", "!": "1", "i": "1",
-    "Z": "2", "z": "2",
-    "S": "5", "s": "5", "$": "5",
-    "G": "6",
-    "B": "8",
-    "q": "9",
-})
-
-EMAIL_RE = re.compile(r"[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{1,3}")
-LABEL_RE = re.compile(r"\(([A-Za-z]{1,3})\)")
-MIN_CONF = 25
+CSV_FIELDS = ["page", "name", "address", "phones", "emails", "notes",
+              "in_flight_logs", "flight_count", "raw", "id", "column", "pages", "ref",
+              "status", "block_type", "needs_review", "review_flags", "source_url",
+              "phone_lines", "email_lines"]
 
 
-def load_words(tsv_path):
-    words = []
-    with open(tsv_path, newline="", encoding="utf-8", errors="replace") as f:
-        for row in csv.DictReader(f, delimiter="\t", quoting=csv.QUOTE_NONE):
-            if row.get("level") != "5":
-                continue
-            text = (row.get("text") or "").strip()
-            if not text:
-                continue
-            try:
-                conf = float(row["conf"])
-            except (ValueError, KeyError):
-                continue
-            if conf < MIN_CONF:
-                continue
-            words.append({
-                "t": text,
-                "x": int(row["left"]), "y": int(row["top"]),
-                "w": int(row["width"]), "h": int(row["height"]),
-            })
-    return words
+def csv_record(contact):
+    row = {key: contact.get(key, "") for key in CSV_FIELDS}
+    row.update(
+        phones="; ".join(phone_text(p) for p in contact["phones"]),
+        emails="; ".join(contact["emails"]),
+        in_flight_logs="; ".join(contact["flight_log_names"]),
+        review_flags="; ".join(contact["review_flags"]),
+        phone_lines="\n".join(contact["phone_lines"]),
+        email_lines="\n".join(contact["email_lines"]),
+    )
+    return row
 
 
-def fix_digits(token):
-    """Map common OCR letter->digit confusions, but only for tokens that end
-    up mostly numeric (phone-number contexts)."""
-    fixed = token.translate(DIGIT_FIX)
-    digits = sum(c.isdigit() for c in fixed)
-    letters = sum(c.isalpha() for c in fixed)
-    if digits >= 2 and digits >= letters:
-        return fixed
-    return token
+def write_csv(path, contacts):
+    with open(path, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=CSV_FIELDS, lineterminator="\n")
+        writer.writeheader()
+        writer.writerows(csv_record(c) for c in contacts)
 
 
-def fix_line(line):
-    return " ".join(fix_digits(tok) for tok in line.split(" "))
-
-
-def cluster_lines(words):
-    """Group words into lines by vertical overlap; return list of
-    (y_center, text) sorted top to bottom."""
-    if not words:
-        return []
-    mh = statistics.median(w["h"] for w in words)
-    words = sorted(words, key=lambda w: w["y"] + w["h"] / 2)
-    lines = []
-    for w in words:
-        yc = w["y"] + w["h"] / 2
-        for line in lines:
-            if abs(yc - line["yc"]) <= max(10, 0.55 * mh):
-                line["words"].append(w)
-                n = len(line["words"])
-                line["yc"] = (line["yc"] * (n - 1) + yc) / n
-                break
-        else:
-            lines.append({"yc": yc, "words": [w]})
-    out = []
-    for line in lines:
-        ws = sorted(line["words"], key=lambda w: w["x"])
-        text = " ".join(w["t"] for w in ws)
-        text = re.sub(r"\s+", " ", text).strip()
-        if text:
-            out.append((line["yc"], text))
-    out.sort(key=lambda l: l[0])
-    return out
-
-
-def split_blocks(lines):
-    """Split a column's lines into contact blocks at large vertical gaps."""
-    if not lines:
-        return []
-    pitches = [lines[i + 1][0] - lines[i][0] for i in range(len(lines) - 1)]
-    pitches = [p for p in pitches if p > 4]
-    med = statistics.median(pitches) if pitches else 30
-    blocks, cur = [], [lines[0][1]]
-    for i in range(1, len(lines)):
-        gap = lines[i][0] - lines[i - 1][0]
-        if gap > 1.65 * med:
-            blocks.append(cur)
-            cur = []
-        cur.append(lines[i][1])
-    blocks.append(cur)
-    return blocks
-
-
-PHONE_LINE_RE = re.compile(
-    r"(?:\+?\d[\d .\-/]{5,}\d)\s*(?:\([A-Za-z]{1,3}\))?"
-)
-
-
-def looks_like_details(line):
-    fixed = fix_line(line)
-    digits = sum(c.isdigit() for c in fixed)
-    return digits >= 6 or "@" in line or line.lower().startswith("email")
-
-
-def is_noise_block(lines):
-    text = " ".join(lines)
-    if len(text) <= 3:
-        return True
-    if all(len(l) <= 2 for l in lines) and not any(c.isdigit() for c in text):
-        return True
-    return False
-
-
-def extract_block(page, col, lines):
-    raw = "\n".join(lines)
-    emails = EMAIL_RE.findall(raw)
-
-    phones = []
-    for line in lines:
-        fixed = fix_line(line)
-        for m in PHONE_LINE_RE.finditer(fixed):
-            num = m.group(0)
-            lab = ""
-            lm = LABEL_RE.search(fixed[m.end():m.end() + 8])
-            if lm:
-                lab = lm.group(1).lower()
-            digits = re.sub(r"\D", "", num)
-            if len(digits) >= 6:
-                phones.append({"number": num.strip(), "label": lab})
-
-    name = lines[0].strip(" .,;:")
-    addr_lines = []
-    for line in lines[1:]:
-        fixed = fix_line(line)
-        rest = PHONE_LINE_RE.sub("", fixed)
-        rest = EMAIL_RE.sub("", rest)
-        rest = re.sub(r"(?i)^email\s*:?", "", rest).strip(" ,;:-")
-        if rest and not re.fullmatch(r"[\d .\-()/]+", rest):
-            addr_lines.append(rest)
-    return {
-        "page": page,
-        "column": col,
-        "name": name,
-        "address": ", ".join(addr_lines),
-        "phones": phones,
-        "emails": emails,
-        "raw": raw,
-    }
-
-
-def norm_name(s):
-    s = s.lower()
-    s = re.sub(r"[^a-z ]", " ", s)
-    return re.sub(r"\s+", " ", s).strip()
-
-
-def band_key(path):
-    m = re.search(r"page-\d{3}([A-Z0-9]*)\.tsv$", path)
-    tag = m.group(1)
-    if tag == "":
-        return 0
-    if tag == "L":
-        return 1
-    if tag == "R":
-        return 2
-    return int(tag)
+def write_exports(contacts, matches):
+    """Keep candidate-match annotations and all derived exports in sync."""
+    by_contact = defaultdict(list)
+    for match in matches:
+        by_contact[match["contact_id"]].append(match)
+    for contact in contacts:
+        candidates = by_contact[contact["id"]]
+        contact["flight_log_names"] = sorted({m["passenger"] for m in candidates})
+        contact["flight_count"] = sum(m["flights"] for m in candidates)
+        contact["flight_log_matches"] = [
+            {k: m[k] for k in ("passenger", "flights", "match", "score")}
+            for m in candidates
+        ]
+    write_json(ROOT / "contacts.json", contacts)
+    write_csv(ROOT / "contacts.csv", contacts)
+    write_json(ROOT / "astra_contacts.json", [astra_record(c) for c in contacts])
+    write_json(ROOT / "xref.json", matches)
+    write_csv(ROOT / "contacts_review.csv", [c for c in contacts if c["needs_review"]])
+    report = quality_report(contacts)
+    write_json(ROOT / "contacts_quality.json", report)
+    return report
 
 
 def main():
-    # ---- flight-log passenger index for cross-reference ----
-    with open("flights.json") as f:
-        flights = json.load(f)
-    h = flights["headers"]
-    i_first, i_last = h.index("First Name"), h.index("Last Name")
-    pax = {}  # (last, first_initial) -> {"name": display, "flights": n}
-    for r in flights["rows"]:
-        first, last = str(r[i_first]).strip(), str(r[i_last]).strip()
-        if not last or last in ("?", "No Records"):
-            continue
-        key = (norm_name(last), norm_name(first)[:1])
-        if not key[0] or not key[1]:
-            continue
-        e = pax.setdefault(key, {"name": f"{first} {last}".strip(), "flights": 0})
-        e["flights"] += 1
-
-    contacts = []
-    empty_pages = []
-    prev = None  # last contact, for cross-column/page continuations
-
-    for page in range(1, 96):
-        if page in HANDWRITTEN_PAGES:
-            prev = None
-            continue
-        files = sorted(glob.glob(str(OCR_DIR / f"page-{page:03d}*.tsv")), key=band_key)
-        if not files:
-            empty_pages.append(page)
-            prev = None
-            continue
-        got_any = False
-        for fp in files:
-            col = Path(fp).stem.replace(f"page-{page:03d}", "")
-            words = load_words(fp)
-            if len(words) < 5:
-                continue
-            got_any = True
-            lines = cluster_lines(words)
-            for blines in split_blocks(lines):
-                blines = [l for l in blines if l.strip()]
-                if not blines or is_noise_block(blines):
-                    continue
-                if looks_like_details(blines[0]) and prev is not None:
-                    extra = extract_block(page, col, blines)
-                    prev["raw"] += "\n" + extra["raw"]
-                    prev["phones"].extend(extra["phones"])
-                    prev["emails"].extend(e for e in extra["emails"] if e not in prev["emails"])
-                    if extra["address"]:
-                        prev["address"] = (prev["address"] + ", " + extra["address"]).strip(", ")
-                    continue
-                c = extract_block(page, col, blines)
-                contacts.append(c)
-                prev = c
-        if not got_any:
-            empty_pages.append(page)
-            prev = None
-
-    # ---- manual transcriptions of the handwritten pages ----
-    with open("manual_contacts.json") as f:
-        contacts.extend(json.load(f))
-
-    # ---- cross-reference with flight logs ----
-    for c in contacts:
-        matches = {}
-        parts = re.split(r"\s+&\s+|\s+and\s+", c["name"])
-        for part in parts:
-            part = part.strip()
-            if not part:
-                continue
-            n = norm_name(part)
-            tokens = n.split()
-            if not tokens:
-                continue
-            if "," in part:
-                last = norm_name(part.split(",", 1)[0])
-                first = norm_name(part.split(",", 1)[1] if "," in part else "")
-            else:
-                last = tokens[-1]
-                first = tokens[0]
-            fi = first[:1]
-            for (l, f_init), e in pax.items():
-                if l == last and (not fi or not f_init or fi == f_init):
-                    matches[e["name"]] = e["flights"]
-        c["flight_log_names"] = sorted(matches)
-        c["flight_count"] = sum(matches.values())
-
-    contacts.sort(key=lambda c: (c["page"], c["column"]))
-
-    with open("contacts.json", "w") as f:
-        json.dump(contacts, f, indent=1, ensure_ascii=False)
-
-    with open("contacts.csv", "w", newline="") as f:
-        w = csv.writer(f)
-        w.writerow(["page", "name", "address", "phones", "emails", "notes",
-                    "in_flight_logs", "flight_count", "raw"])
-        for c in contacts:
-            w.writerow([
-                c["page"], c["name"], c["address"],
-                "; ".join(p["number"] + (f" ({p['label']})" if p["label"] else "") for p in c["phones"]),
-                "; ".join(c["emails"]),
-                c.get("notes", ""),
-                "; ".join(c["flight_log_names"]), c["flight_count"],
-                c["raw"].replace("\n", " | "),
-            ])
-
-    n_pax = sum(1 for c in contacts if c["flight_log_names"])
-    print(f"contacts: {len(contacts)}  pages-empty/unreadable: {empty_pages}")
-    print(f"with phones: {sum(1 for c in contacts if c['phones'])}  "
-          f"with emails: {sum(1 for c in contacts if c['emails'])}  "
-          f"cross-referenced to flight logs: {n_pax}")
+    contacts = load_contacts()
+    flights = json.loads((ROOT / "flights.json").read_text(encoding="utf-8"))
+    matches = build_matches(flights, contacts)
+    report = write_exports(contacts, matches)
+    print(f"Wrote {len(contacts)} source records across {len(report['source_pages'])} PDF pages; "
+          f"{report['source_lines']} complete source lines.")
+    print(f"Review queue: {report['records_needing_review']} records; "
+          f"candidate passenger matches: {len(matches)}.")
+    print("Run python3 build.py to refresh the explorer.")
 
 
 if __name__ == "__main__":

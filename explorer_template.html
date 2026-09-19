@@ -269,7 +269,7 @@
 <!-- ============ CONTACTS VIEW ============ -->
 <div id="view-contacts" class="hidden">
   <div class="toolbar" style="padding-bottom:12px">
-    <button class="btn" id="c-toggle">☰ Switch to legacy OCR view (flight-log cross-reference)</button>
+    <button class="btn" id="c-toggle">☰ Switch to contact table and CSV export</button>
     <span style="color:var(--muted);font-size:12px">Contact directory — review edition (Astra), shown unmodified with source-scan images.</span>
   </div>
   <iframe id="c-frame" src="Contact_directory_review.html" title="Contact directory — review edition"
@@ -285,14 +285,20 @@
     </div>
     <select id="c-letter"><option value="">Letter: all</option></select>
     <select id="c-fly">
-      <option value="">Flight logs: all</option>
-      <option value="yes">Also in flight logs</option>
-      <option value="no">Not in flight logs</option>
+      <option value="">Candidate flight matches: all</option>
+      <option value="yes">Has candidate matches</option>
+      <option value="no">No candidate matches</option>
     </select>
     <select id="c-has">
       <option value="">Has: anything</option>
       <option value="email">Has email</option>
       <option value="phone">Has phone</option>
+    </select>
+    <select id="c-review" aria-label="Transcription status">
+      <option value="">Transcription: all</option>
+      <option value="visual">Visually transcribed — scan-limited</option>
+      <option value="machine">Machine transcription</option>
+      <option value="flagged">Flagged for review</option>
     </select>
     <button class="btn" id="c-exportBtn">⬇ Export CSV</button>
     <button class="btn ghost" id="c-resetBtn">Reset</button>
@@ -633,8 +639,7 @@ const Flights = (function () {
 const Contacts = (function () {
   const ROWS = JSON.parse($('contact-data').textContent);
 
-  // toggle between Astra's review edition (iframe, default) and the legacy
-  // OCR table with the flight-log cross-reference
+  // Both views use the same review transcription and stable entry IDs.
   let showingLegacy = false;
   $('c-toggle').addEventListener('click', () => {
     showingLegacy = !showingLegacy;
@@ -642,13 +647,13 @@ const Contacts = (function () {
     $('c-legacy').classList.toggle('hidden', !showingLegacy);
     $('c-toggle').textContent = showingLegacy
       ? '☰ Switch to review edition (Astra)'
-      : '☰ Switch to legacy OCR view (flight-log cross-reference)';
+      : '☰ Switch to contact table and CSV export';
   });
-  const COLS = ['Name', 'Phones', 'Emails', 'Address', 'In Flight Logs', 'Page'];
+  const COLS = ['Name', 'Phones', 'Emails', 'Address', 'Candidate Flight Matches', 'Page', 'Status'];
   const KEY = { Name: 'name', Phones: 'phones', Emails: 'emails', Address: 'address',
-    'In Flight Logs': 'flight_log_names', Page: 'page' };
+    'Candidate Flight Matches': 'flight_log_names', Page: 'page', Status: 'status' };
 
-  const state = { q: '', letter: '', fly: '', has: '', sortCol: 'Name', sortDir: 1, page: 1, pageSize: 50 };
+  const state = { q: '', letter: '', fly: '', has: '', review: '', sortCol: 'Name', sortDir: 1, page: 1, pageSize: 50 };
   let filtered = [];
 
   // letter dropdown
@@ -656,7 +661,8 @@ const Contacts = (function () {
   $('c-letter').innerHTML = '<option value="">Letter: all</option>' +
     letters.map(l => '<option>' + l + '</option>').join('');
 
-  const phonesText = c => c.phones.map(p => p.number + (p.label ? ' (' + p.label + ')' : '')).join('  ·  ');
+  const phoneText = p => p.number + (p.label ? ' (' + p.label + ')' : '') + (p.annotation ? ' ' + p.annotation : '');
+  const phonesText = c => c.phones.map(phoneText).join('  ·  ');
 
   function getFiltered() {
     const q = state.q;
@@ -666,9 +672,12 @@ const Contacts = (function () {
       if (state.fly === 'no' && c.flight_log_names.length) return false;
       if (state.has === 'email' && !c.emails.length) return false;
       if (state.has === 'phone' && !c.phones.length) return false;
+      if (state.review === 'visual' && !c.status.startsWith('Visually')) return false;
+      if (state.review === 'machine' && !c.status.startsWith('Machine')) return false;
+      if (state.review === 'flagged' && !c.needs_review) return false;
       if (q) {
         const hay = (c.name + ' ' + c.address + ' ' + phonesText(c) + ' ' +
-          c.emails.join(' ') + ' ' + c.flight_log_names.join(' ')).toLowerCase();
+          c.emails.join(' ') + ' ' + c.flight_log_names.join(' ') + ' ' + c.raw + ' ' + c.id).toLowerCase();
         return q.split(/\s+/).every(tok => hay.includes(tok));
       }
       return true;
@@ -684,10 +693,10 @@ const Contacts = (function () {
 
   function renderStats() {
     $('c-stats').innerHTML = [
-      [filtered.length.toLocaleString(), 'Contacts shown'],
+      [filtered.length.toLocaleString(), 'Source records shown'],
       [filtered.filter(c => c.phones.length).length.toLocaleString(), 'With phone'],
       [filtered.filter(c => c.emails.length).length.toLocaleString(), 'With email'],
-      [filtered.filter(c => c.flight_log_names.length).length.toLocaleString(), 'Also in flight logs']
+      [filtered.filter(c => c.flight_log_names.length).length.toLocaleString(), 'Candidate flight matches']
     ].map(([n, l]) => '<div class="stat"><div class="num">' + n + '</div><div class="lbl">' + l + '</div></div>').join('');
   }
 
@@ -722,7 +731,8 @@ const Contacts = (function () {
         '<td>' + highlight(c.emails.join('  '), state.q) + '</td>' +
         '<td>' + highlight(c.address, state.q) + '</td>' +
         '<td>' + fly + '</td>' +
-        '<td>' + c.page + '</td>';
+        '<td>' + esc(c.pages) + '</td>' +
+        '<td>' + esc(c.status) + (c.needs_review ? ' · Review flagged' : '') + '</td>';
       tr.addEventListener('click', () => openContactModal(c));
       frag.appendChild(tr);
     });
@@ -739,13 +749,16 @@ const Contacts = (function () {
         (c.flight_count === 1 ? '' : 's') + ')</span>'
       : '';
     openModal(esc(c.name) + ' <span style="color:var(--muted);font-size:13px">· PDF page ' + c.page + '</span>', [
-      ['Phones', c.phones.map(p => esc(p.number) +
-        (p.label ? ' <span class="badge src">' + esc(p.label) + '</span>' : '')).join('<br>')],
+      ['Phones', c.phones.map(p => esc(phoneText(p))).join('<br>')],
       ['Emails', c.emails.map(e => esc(e)).join('<br>')],
       ['Address', esc(c.address)],
       ['Notes', esc(c.notes || '')],
-      ['Also in flight logs', flyHtml],
-    ], 'Raw OCR text (page ' + c.page + '):\n' + c.raw);
+      ['Transcription', esc(c.status)],
+      ['Review flags', esc(c.review_flags.join(', '))],
+      ['Source', '<a class="link" href="' + esc(c.source_url) + '" target="_blank" rel="noopener">' + esc(c.id + ' · ' + c.ref) + ' · Compare with scan</a>'],
+      ['Candidate flight matches', flyHtml],
+      ['Match tiers', esc(c.flight_log_matches.map(m => m.passenger + ': ' + m.match).join('; '))],
+    ], 'Complete source transcription (PDF pages ' + c.pages + '):\n' + c.raw);
     $('modalGrid').querySelectorAll('a.link[data-pax]').forEach(a =>
       a.addEventListener('click', () => {
         $('overlay').classList.add('hidden');
@@ -766,19 +779,24 @@ const Contacts = (function () {
   $('c-letter').addEventListener('change', () => { state.letter = $('c-letter').value; state.page = 1; render(); });
   $('c-fly').addEventListener('change', () => { state.fly = $('c-fly').value; state.page = 1; render(); });
   $('c-has').addEventListener('change', () => { state.has = $('c-has').value; state.page = 1; render(); });
+  $('c-review').addEventListener('change', () => { state.review = $('c-review').value; state.page = 1; render(); });
   $('c-resetBtn').addEventListener('click', () => {
     state.q = ''; $('c-q').value = '';
     state.letter = ''; $('c-letter').value = '';
     state.fly = ''; $('c-fly').value = '';
     state.has = ''; $('c-has').value = '';
+    state.review = ''; $('c-review').value = '';
     state.sortCol = 'Name'; state.sortDir = 1; state.page = 1;
     render();
   });
   $('c-exportBtn').addEventListener('click', () => downloadCSV(
     'contacts_filtered.csv',
-    ['page', 'name', 'address', 'phones', 'emails', 'in_flight_logs', 'flight_count'],
-    filtered.map(c => [c.page, c.name, c.address, phonesText(c), c.emails.join('; '),
-      c.flight_log_names.join('; '), c.flight_count])));
+    ['page', 'name', 'address', 'phones', 'emails', 'notes', 'in_flight_logs', 'flight_count', 'raw',
+      'id', 'column', 'pages', 'ref', 'status', 'block_type', 'needs_review', 'review_flags', 'source_url', 'phone_lines', 'email_lines'],
+    filtered.map(c => [c.page, c.name, c.address, c.phones.map(phoneText).join('; '), c.emails.join('; '),
+      c.notes, c.flight_log_names.join('; '), c.flight_count, c.raw, c.id, c.column, c.pages,
+      c.ref, c.status, c.block_type, c.needs_review, c.review_flags.join('; '), c.source_url,
+      c.phone_lines.join('\n'), c.email_lines.join('\n')])));
 
   render();
 })();

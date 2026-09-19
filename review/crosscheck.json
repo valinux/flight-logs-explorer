@@ -1,0 +1,205 @@
+{
+  "reviewed_on": "2026-09-19",
+  "source_sha256": "4f8e111d7bd29039742de62e9f67cf5051b617e26a923117df323a5d2fb3c0de",
+  "method": "Independent visual comparison of every line in each selected record and each continuation against original pages/page-NNN.png; 2x–6x native-raster crops for tricky characters. Current review/pages JSON and verified_transcriptions decisions used as comparison baseline; no outside sources.",
+  "entries": [
+    {
+      "id": "E0008",
+      "pages": [
+        1
+      ],
+      "all_lines_checked": true,
+      "reviewed_line_count": 7,
+      "finding": "Enlarged email appears saffya@aol.com: the letter before final a has the descender and upper arms of y. All other lines match.",
+      "recommended_changes": [
+        {
+          "page": 1,
+          "column": 2,
+          "from": "Email: saff[unclear]a@aol.com",
+          "to": "Email: saffya@aol.com",
+          "confidence": "medium-high",
+          "reason": "Enlarged native raster supports y; leave bracket if root judges pixel ambiguity unresolved."
+        }
+      ]
+    },
+    {
+      "id": "E0015",
+      "pages": [
+        2
+      ],
+      "all_lines_checked": true,
+      "reviewed_line_count": 12,
+      "finding": "All lines confirmed, especially portable 0777 412 1212 (Dp).",
+      "recommended_changes": []
+    },
+    {
+      "id": "E0016",
+      "pages": [
+        2
+      ],
+      "all_lines_checked": true,
+      "reviewed_line_count": 4,
+      "finding": "All lines confirmed; first phone is 00 34 1 276 8697 (h). Printed given name Vincente retained.",
+      "recommended_changes": []
+    },
+    {
+      "id": "E0073",
+      "pages": [
+        6
+      ],
+      "all_lines_checked": true,
+      "reviewed_line_count": 3,
+      "finding": "All three lines confirmed: Blair Tony; sec Katie Kay; 0207-321 0905,.",
+      "recommended_changes": []
+    },
+    {
+      "id": "E0110",
+      "pages": [
+        8
+      ],
+      "all_lines_checked": true,
+      "reviewed_line_count": 28,
+      "finding": "Both column fragments checked. Address visibly reads (w)6 W. 14th Street 3rd floor. All digits/emails match latest review, including 011 5511 8135 8000 (p) Brazil.",
+      "recommended_changes": []
+    },
+    {
+      "id": "E0132",
+      "pages": [
+        9
+      ],
+      "all_lines_checked": true,
+      "reviewed_line_count": 21,
+      "finding": "Both column fragments checked. First phone 0207-376 7308(h); continuation begins 001 310 625 5500(p). All lines match.",
+      "recommended_changes": []
+    },
+    {
+      "id": "E0196",
+      "pages": [
+        13
+      ],
+      "all_lines_checked": true,
+      "reviewed_line_count": 4,
+      "finding": "Both phone lines confirmed, including 00 33 66 221896 (w). Base heading reads d'Uzes Jacques de crussol; a supposed acute accent on e is not securely distinguishable in this scan. No inferred title/name expansion supported.",
+      "recommended_changes": []
+    },
+    {
+      "id": "E0205",
+      "pages": [
+        13,
+        14
+      ],
+      "all_lines_checked": true,
+      "reviewed_line_count": 18,
+      "finding": "All lines across pp13–14 checked. Street is Rua Euclides Figueiredo 76; email mcadoc@attglobal.net; final p13 phone 00 33 1 1544 4713 (p); p14 continuation 55 21 2524 5682 (wf). No changes recommended.",
+      "recommended_changes": []
+    },
+    {
+      "id": "E0242",
+      "pages": [
+        16
+      ],
+      "all_lines_checked": true,
+      "reviewed_line_count": 29,
+      "finding": "Both fragments checked. In particular 01344 845688, +44 1344 8458 88 (hf), +44 1344 8731 87 (h), and both 212 419 7493 Jenean lines are visibly printed as recorded. No normalization recommended.",
+      "recommended_changes": []
+    },
+    {
+      "id": "E0250",
+      "pages": [
+        16
+      ],
+      "all_lines_checked": true,
+      "reviewed_line_count": 6,
+      "finding": "Both fragments checked. Street visibly Montaliver; numbers 00 33 1 42652237 (h) and 00 33 3 2379282 (c) confirmed.",
+      "recommended_changes": []
+    },
+    {
+      "id": "E0257",
+      "pages": [
+        17
+      ],
+      "all_lines_checked": true,
+      "reviewed_line_count": 7,
+      "finding": "True page is 17. All lines checked; printed heading Elian, Johnathan and email eilianj@starwood.com retained. Final phone reads 1 203 249 8645 cell.",
+      "recommended_changes": []
+    },
+    {
+      "id": "E0278",
+      "pages": [
+        18
+      ],
+      "all_lines_checked": true,
+      "reviewed_line_count": 11,
+      "finding": "Both fragments checked. Work number ends 711678 (final digit 8); clipped email and Logner Hall as currently recorded supported.",
+      "recommended_changes": []
+    },
+    {
+      "id": "E0287",
+      "pages": [
+        18
+      ],
+      "all_lines_checked": true,
+      "reviewed_line_count": 5,
+      "finding": "All lines checked. Heading visibly Failetans, Olivier de. No replacement by a more familiar surname is supported.",
+      "recommended_changes": []
+    },
+    {
+      "id": "E0309",
+      "pages": [
+        20
+      ],
+      "all_lines_checked": true,
+      "reviewed_line_count": 5,
+      "finding": "All lines checked. Heading visibly Foman, Bobby & Jeanette, with no r after o. Phones confirmed.",
+      "recommended_changes": []
+    },
+    {
+      "id": "E0328",
+      "pages": [
+        21
+      ],
+      "all_lines_checked": true,
+      "reviewed_line_count": 4,
+      "finding": "All lines checked. Enlarged address shows Stnhope, with t immediately followed by n. Do not expand to Stanhope. Phone remains printed 0207-373 6435(h0.",
+      "recommended_changes": [
+        {
+          "page": 21,
+          "column": 1,
+          "from": "29 S[unclear]nhope Gdns",
+          "to": "29 Stnhope Gdns",
+          "confidence": "high",
+          "reason": "The narrow character after S is a visible t; no a is printed."
+        }
+      ]
+    },
+    {
+      "id": "E0332",
+      "pages": [
+        21
+      ],
+      "all_lines_checked": true,
+      "reviewed_line_count": 8,
+      "finding": "All lines checked. Printed Furstenburg Buravelli, Nina; via Delle Mantellante 26; phone and split country-number email annotation all match.",
+      "recommended_changes": []
+    },
+    {
+      "id": "E0346",
+      "pages": [
+        21
+      ],
+      "all_lines_checked": true,
+      "reviewed_line_count": 6,
+      "finding": "All lines checked. Last phone contains a leading 7 before 905: 0101 212 734 7905 (h). Historical 0101 prefix retained.",
+      "recommended_changes": [
+        {
+          "page": 21,
+          "column": 4,
+          "from": "0101 212 734 905 (h)",
+          "to": "0101 212 734 7905 (h)",
+          "confidence": "high",
+          "reason": "An entire visible 7 was omitted from latest review."
+        }
+      ]
+    }
+  ]
+}

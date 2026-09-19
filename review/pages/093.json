@@ -1,0 +1,605 @@
+{
+ "page": 93,
+ "reviewed_on": "2026-09-19",
+ "method": "Visual comparison of every entry on the original PDF scan; enlarged crops for ambiguous readings.",
+ "source_sha256": "4f8e111d7bd29039742de62e9f67cf5051b617e26a923117df323a5d2fb3c0de",
+ "entries": [
+  {
+   "id": "E1569",
+   "name": "Alison Chambers",
+   "parts": [
+    {
+     "page": 93,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Alison Chambers",
+      "(561) 753-1011"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1570",
+   "name": "Johanna",
+   "parts": [
+    {
+     "page": 93,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Johanna",
+      "(561) 650-0185"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1571",
+   "name": "Jennifer",
+   "parts": [
+    {
+     "page": 93,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Jennifer",
+      "(561) 575-9814"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1572",
+   "name": "Carolyn Adriano",
+   "parts": [
+    {
+     "page": 93,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Carolyn Adriano",
+      "(561) 478-0496",
+      "[Source annotation: a curved arrow connects this row with the Kristen row.]"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1573",
+   "name": "Nicole",
+   "parts": [
+    {
+     "page": 93,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Nicole",
+      "(561) 832-6777"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1574",
+   "name": "Kristen",
+   "parts": [
+    {
+     "page": 93,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Kristen",
+      "(561) 707-3565",
+      "[Source annotation: a curved arrow connects this row with the Carolyn Adriano row.]"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1575",
+   "name": "Alice",
+   "parts": [
+    {
+     "page": 93,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Alice",
+      "(917) 774-4452"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1576",
+   "name": "Dawn",
+   "parts": [
+    {
+     "page": 93,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Dawn",
+      "(561) 776-5679"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1577",
+   "name": "Cache (Brazil)",
+   "parts": [
+    {
+     "page": 93,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Cache (Brazil)",
+      "00 55 11 83834951"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1578",
+   "name": "Paula",
+   "parts": [
+    {
+     "page": 93,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Paula",
+      "(917) 518-24[unclear]4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1579",
+   "name": "Alice",
+   "parts": [
+    {
+     "page": 93,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Alice",
+      "(305) 5[unclear][unclear]-8013"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1580",
+   "name": "Manuela",
+   "parts": [
+    {
+     "page": 93,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Manuela",
+      "(212) [unclear]-[unclear]"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1581",
+   "name": "Marie",
+   "parts": [
+    {
+     "page": 93,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Marie",
+      "(561) 644-1639"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1582",
+   "name": "Courtney Wild",
+   "parts": [
+    {
+     "page": 93,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Courtney Wild",
+      "(561) 202-0188"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1583",
+   "name": "T[unclear]le",
+   "parts": [
+    {
+     "page": 93,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "T[unclear]le",
+      "(917) 603-2296"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1584",
+   "name": "Natlie",
+   "parts": [
+    {
+     "page": 93,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Natlie",
+      "(917) 204-9696"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1585",
+   "name": "Svetlana",
+   "parts": [
+    {
+     "page": 93,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Svetlana",
+      "(917) 774-3061"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1586",
+   "name": "Cheri Lynch",
+   "parts": [
+    {
+     "page": 93,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Cheri Lynch",
+      "(561) 373-1412"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1587",
+   "name": "Britney",
+   "parts": [
+    {
+     "page": 93,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Britney",
+      "(561) 644-7226"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1588",
+   "name": "Johanna",
+   "parts": [
+    {
+     "page": 93,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Johanna",
+      "(561) 714-0546",
+      "[Source annotation: a mark appears beside the name.]"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1589",
+   "name": "Brittany",
+   "parts": [
+    {
+     "page": 93,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Brittany",
+      "(561) 547-2415"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1590",
+   "name": "Cecile",
+   "parts": [
+    {
+     "page": 93,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Cecile",
+      "(201) 563-7171"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1591",
+   "name": "Jenny",
+   "parts": [
+    {
+     "page": 93,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Jenny",
+      "(917) 330-1033"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1592",
+   "name": "Katya",
+   "parts": [
+    {
+     "page": 93,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Katya",
+      "(917) 678-2772"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1593",
+   "name": "Emmy",
+   "parts": [
+    {
+     "page": 93,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Emmy",
+      "(323) 821-3699"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1594",
+   "name": "Nina",
+   "parts": [
+    {
+     "page": 93,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Nina",
+      "(917) 294-1627"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1595",
+   "name": "Allison",
+   "parts": [
+    {
+     "page": 93,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      612.0,
+      792
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Allison",
+      "(631) 267-6215"
+     ]
+    }
+   ]
+  }
+ ]
+}

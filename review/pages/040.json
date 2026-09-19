@@ -1,0 +1,365 @@
+{
+ "page": 40,
+ "reviewed_on": "2026-09-19",
+ "method": "Visual comparison of every entry on the original PDF scan; enlarged crops for ambiguous readings.",
+ "source_sha256": "4f8e111d7bd29039742de62e9f67cf5051b617e26a923117df323a5d2fb3c0de",
+ "entries": [
+  {
+   "id": "E0666",
+   "name": "Nadler Emanuel",
+   "parts": [
+    {
+     "page": 40,
+     "column": 1,
+     "lines": [
+      "Nadler Emanuel",
+      "001 212 758 5430"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0667",
+   "name": "Nagel Adam",
+   "parts": [
+    {
+     "page": 40,
+     "column": 1,
+     "lines": [
+      "Nagel Adam",
+      "001 212 873 8622",
+      "0207-242 9636"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0668",
+   "name": "Nagel William",
+   "parts": [
+    {
+     "page": 40,
+     "column": 1,
+     "lines": [
+      "Nagel William",
+      "0207-242 9636"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0669",
+   "name": "Nardi, Dott M Jacope",
+   "parts": [
+    {
+     "page": 40,
+     "column": 1,
+     "lines": [
+      "Nardi, Dott M Jacope",
+      "0335 683 1385",
+      "Email: janardi@tinoit",
+      "00 39 02 2364726 (h)",
+      "00 39 02 8360678 (w)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0670",
+   "name": "Nastasse Ille & Alex",
+   "parts": [
+    {
+     "page": 40,
+     "column": 1,
+     "lines": [
+      "Nastasse Ille & Alex",
+      "44 East 67th Street",
+      "Apt. 9D",
+      "NY, NY 10021",
+      "001 212 472 2543",
+      "00 401 210 2232(H)",
+      "00 401 230 0484(f)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0671",
+   "name": "Negrete, Jelitza",
+   "parts": [
+    {
+     "page": 40,
+     "column": 1,
+     "lines": [
+      "Negrete, Jelitza",
+      "903 Park Avenue",
+      "3C",
+      "New York, NY",
+      "001 212-744-8771",
+      "001 917 783 7753"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0672",
+   "name": "Neil Andrew",
+   "parts": [
+    {
+     "page": 40,
+     "column": 2,
+     "lines": [
+      "Neil Andrew",
+      "55 Onslow Gdns",
+      "London SW7 3QF",
+      "0207-581 1655",
+      "Email: afneil@aol.com"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0673",
+   "name": "Neil, Andrew",
+   "parts": [
+    {
+     "page": 40,
+     "column": 2,
+     "lines": [
+      "Neil, Andrew",
+      "235 E 49th St #118",
+      "NY NY10017",
+      "001 212 888 9060",
+      "001 212 556 8555 (w)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0674",
+   "name": "Newman, Hetty",
+   "parts": [
+    {
+     "page": 40,
+     "column": 2,
+     "lines": [
+      "Newman, Hetty",
+      "3 Pelly Place",
+      "London, England",
+      "SW3 5DJ",
+      "0207-351-4544"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0675",
+   "name": "Newman, Mr & Mrs John",
+   "parts": [
+    {
+     "page": 40,
+     "column": 2,
+     "lines": [
+      "Newman, Mr & Mrs",
+      "John",
+      "Compton Park",
+      "Compton Chamberlayne",
+      "Wiltshire",
+      "0207-370 0769 (h)",
+      "0207-930 3007 (w)",
+      "07270 294 (h)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0676",
+   "name": "Ng, Clive",
+   "parts": [
+    {
+     "page": 40,
+     "column": 2,
+     "lines": [
+      "Ng, Clive",
+      "652 Broadway",
+      "5th Floor",
+      "New York, NY 10012",
+      "212 598 0203",
+      "0207-235-9686(o)",
+      "0207-259-5599(w)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0677",
+   "name": "Niarchos, Constantine",
+   "parts": [
+    {
+     "page": 40,
+     "column": 3,
+     "lines": [
+      "Niarchos, Constantine",
+      "33 Grosvenor Square",
+      "London SW1",
+      "0207-370 7648 (h)",
+      "0207-629 8400 (w)",
+      "00 41 82344108/36 938 (St M)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0678",
+   "name": "Nickerson, William & Jayne",
+   "parts": [
+    {
+     "page": 40,
+     "column": 3,
+     "lines": [
+      "Nickerson, William &",
+      "Jayne",
+      "131b Portland Road",
+      "London W1",
+      "0207-221 1605 (h)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0679",
+   "name": "Nishio, Yoshi",
+   "parts": [
+    {
+     "page": 40,
+     "column": 3,
+     "lines": [
+      "Nishio, Yoshi",
+      "400 S.McCadden Pl.",
+      "LA, CA 90020",
+      "001-213 934 0714 (h)",
+      "0207-6291187(h)",
+      "0207—493 7086(f)",
+      "0207-6373429(w)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0680",
+   "name": "Noel Alix",
+   "parts": [
+    {
+     "page": 40,
+     "column": 3,
+     "lines": [
+      "Noel Alix",
+      "812 Park Ave",
+      "10021",
+      "001 203 661 0993(h)",
+      "001 203 661 0505(w)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0681",
+   "name": "Noel, Hon Thomas",
+   "parts": [
+    {
+     "page": 40,
+     "column": 3,
+     "lines": [
+      "Noel, Hon Thomas",
+      "24 Lennox Gardens",
+      "London SW1X 0DQ",
+      "0207-589 1841 (h)",
+      "The Grange Farm"
+     ]
+    },
+    {
+     "page": 40,
+     "column": 4,
+     "lines": [
+      "Exton Oakham Leice stershire",
+      "LE15 8BN",
+      "0780 86488 (h)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0682",
+   "name": "Noel, Vanessa",
+   "parts": [
+    {
+     "page": 40,
+     "column": 4,
+     "lines": [
+      "Noel, Vanessa",
+      "12 East 86th St. #535",
+      "New York, NY 10028",
+      "212 906 0054",
+      "212 906 0058 (f)",
+      "001 212 517 5133 (h)",
+      "001 212 737 0115 (w)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0683",
+   "name": "Noha, Cecilia",
+   "parts": [
+    {
+     "page": 40,
+     "column": 4,
+     "lines": [
+      "Noha, Cecilia",
+      "001 212 683 4649"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0684",
+   "name": "Noonan, Tim",
+   "parts": [
+    {
+     "page": 40,
+     "column": 4,
+     "lines": [
+      "Noonan, Tim",
+      "001 212 446 3661"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0685",
+   "name": "Nuttall, Harry",
+   "parts": [
+    {
+     "page": 40,
+     "column": 4,
+     "lines": [
+      "Nuttall, Harry",
+      "Chairman",
+      "RNR International Ltd",
+      "15 Sloane Court West (h)",
+      "London, SW3",
+      "0207-823 4308",
+      "0207-590 6262(w)",
+      "Email: rnrsport@aol.com",
+      "(Hm)17 Queenss Gate Place",
+      "Mews(w)",
+      "London",
+      "SW7 5BG",
+      "UK",
+      "07768 004 328 (p)"
+     ]
+    }
+   ]
+  }
+ ]
+}

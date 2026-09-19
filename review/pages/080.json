@@ -1,0 +1,364 @@
+{
+ "page": 80,
+ "reviewed_on": "2026-09-19",
+ "method": "Visual comparison of every entry on the original PDF scan; enlarged crops for ambiguous readings.",
+ "source_sha256": "4f8e111d7bd29039742de62e9f67cf5051b617e26a923117df323a5d2fb3c0de",
+ "entries": [
+  {
+   "id": "E1332",
+   "name": null,
+   "parts": [
+    {
+     "page": 80,
+     "column": 1,
+     "lines": [
+      "1 718 288 2171 (cell)",
+      "1 514 577 2888 (p)",
+      "1 514 487 8173(h)",
+      "1 514 278 6000 (w) Montreal",
+      "1 514 278 6184 (wf) Montreal",
+      "1 212 548 1350 (wf) NY",
+      "011 44 207 8810906 (h) London",
+      "1 784 456 3439 (h) Moustique",
+      "1 784 493 4010 (p) Moustique",
+      "1 514 487 8173 (h) Claire Ann",
+      "514 953 6009 wife p",
+      "011447860923694 John-Stroll's chauf",
+      "fer",
+      "212 548 1909 Silas's fax #",
+      "212 548 1350 Stroll;s fax",
+      "819 425 8825 new country house"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1333",
+   "name": "Tafoya, Craig",
+   "parts": [
+    {
+     "page": 80,
+     "column": 1,
+     "lines": [
+      "Tafoya, Craig",
+      "Fraser Yachts",
+      "2107 Southeast 18th Street (h)",
+      "Fort Lauderdale, FL 33316",
+      "954 763 5093 (h)",
+      "954 763 9484 (f)",
+      "Email: tafoyac@aol.com",
+      "(Hm)1800 S.E. 10th Avenue",
+      "Suite 400",
+      "Fort Lauderdale, FL 33316",
+      "954 328 6203 (p)",
+      "954 712 0435 (w) direct",
+      "954 763 1053 (w)",
+      "964 684 1384 Emergency"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1334",
+   "name": "Tobiason, Larry",
+   "parts": [
+    {
+     "page": 80,
+     "column": 1,
+     "lines": [
+      "Tobiason, Larry",
+      "Lawrence F. Tobiason Assoc.",
+      "6 Hillside Ave.",
+      "Winchester, MA 01890 (h)",
+      "5722 Freeport Court",
+      "Westerville, OH 43081",
+      "001 614 855 2310",
+      "614 855 1738",
+      "001 614 898 0749 (h)",
+      "001 617 729 1111 (h)",
+      "001 617 729 2519 (f)",
+      "001 614 391 4969 (c)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1335",
+   "name": "Trossle, Bob",
+   "parts": [
+    {
+     "page": 80,
+     "column": 1,
+     "lines": [
+      "Trossle, Bob",
+      "Miller and Raved",
+      "914 634 7476(h)"
+     ]
+    },
+    {
+     "page": 80,
+     "column": 2,
+     "lines": []
+    }
+   ]
+  },
+  {
+   "id": "E1336",
+   "name": "Trump, Donald",
+   "parts": [
+    {
+     "page": 80,
+     "column": 2,
+     "lines": [
+      "Trump, Donald",
+      "The Trump Organization",
+      "721 Fifth Avenue",
+      "New York, NY 10022",
+      "212 832 2000(w)",
+      "212 755 3230 (f)",
+      "Email: melaniakmelania@aol.com",
+      "(Hm)Mar-a-Lago Club",
+      "1100 South Ocean Blvd.",
+      "Palm Beach, FL 33480",
+      "561 833 2466 (h)",
+      "561 832 0034 (f)",
+      "561 832 2600 (spa)",
+      "212 453 7214 (Car)",
+      "Howard Willson Houseman",
+      "561-832-0079 (h)",
+      "212-832-9191 (h)",
+      "561 832 2600 Mar-a-lago",
+      "212 308 6758 Trump Security",
+      "212-715-7220 Norma direct-emergency",
+      "contact",
+      "212 679 6111 Milania",
+      "917 584 8222 Milania p",
+      "561 832 2669 (hf)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1337",
+   "name": "Trust, Marty",
+   "parts": [
+    {
+     "page": 80,
+     "column": 2,
+     "lines": [
+      "Trust, Marty",
+      "Mast Industries, Inc.",
+      "601 North County Road (h)",
+      "Palm Beach, FL 33480",
+      "978 975 6100 (w)",
+      "978 975 6116 (w)",
+      "Email: mtrust@mast.com",
+      "(Hm)100 Old River Road",
+      "Andover, MA 01810",
+      "561 863 7377 (h)",
+      "561 863 6476 (hf)",
+      "617 426 9543/44 Boston (h)",
+      "617 338 1461 Boston (hf)",
+      "561 863 7377/6987 (h)",
+      "561 863 6476 (hf)",
+      "603 490 3660 (Car)NH",
+      "888 611 7332 (p)Wife",
+      "978 397 3033 (p)",
+      "917 699 4247 (p)",
+      "561 358 4347 Wife",
+      "561 371 4885 Wife",
+      "978 683 2788 (wf)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1338",
+   "name": "Tuckerman, Steve",
+   "parts": [
+    {
+     "page": 80,
+     "column": 3,
+     "lines": [
+      "Tuckerman, Steve",
+      "Tuckerman Optical Co.",
+      "5000 Kitzmiller Road (h&w)",
+      "PO box 488",
+      "New Albany, OH 43054",
+      "614 775 4002 (w)",
+      "614 775 4004 (f)",
+      "Email:",
+      "stevetuckerman5000@msn.co",
+      "614 775 4000*** (h)",
+      "614 775 4004 (hf)",
+      "312-649-9182 Chicago h",
+      "614-271-3677 Wife's Car",
+      "614-206-3600*** (p)",
+      "614 370 7373",
+      "970 925 8817 Aspen f"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1339",
+   "name": "Ugland, Peg",
+   "parts": [
+    {
+     "page": 80,
+     "column": 3,
+     "lines": [
+      "Ugland, Peg",
+      "7026 Wichita Drive",
+      "Dublin, OH 43017",
+      "614-764 9847(h)",
+      "614-989-0047(p)",
+      "Email: pegu@naproperty.com",
+      "(Hm)Napi(new) 6525 W. Campus",
+      "Oval",
+      "Suite 105",
+      "New Albany",
+      "Ohio, 43054",
+      "614-422-0606 Richard Ugland",
+      "614-939-6000 w",
+      "614-939-6003 w direct",
+      "614-939-6025 fax",
+      "614-939-6007 F direct"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1340",
+   "name": "UPS",
+   "parts": [
+    {
+     "page": 80,
+     "column": 3,
+     "lines": [
+      "UPS",
+      "Account # E10-954",
+      "Domestic 800 742 5877",
+      "Internatl 800-782-7892",
+      "ups)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1341",
+   "name": "Valukas, Tony",
+   "parts": [
+    {
+     "page": 80,
+     "column": 3,
+     "lines": [
+      "Valukas, Tony",
+      "Jenner & Block",
+      "One IBM Plaza",
+      "Chicago, Illinois 60611",
+      "312-222-9350",
+      "312-527-0484",
+      "708-866-8348 Home"
+     ]
+    },
+    {
+     "page": 80,
+     "column": 4,
+     "lines": []
+    }
+   ]
+  },
+  {
+   "id": "E1342",
+   "name": "Visoski, Larry",
+   "parts": [
+    {
+     "page": 80,
+     "column": 4,
+     "lines": [
+      "Visoski, Larry",
+      "1131 Pine Point Road",
+      "Singer Island, FL 33404",
+      "561 842 0345(h/f)",
+      "212 737 9536(h)",
+      "917 868 6145 (p)",
+      "44 778 599 0070 Euro (p)",
+      "505 832 2699 (h) Sante Fe",
+      "561 543 7513 (p) back-up",
+      "614 433 7063 David Rigg"
+     ]
+    },
+    {
+     "page": 80,
+     "column": 4,
+     "lines": [
+      "[Handwritten source annotation: Chief Pilot]"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1343",
+   "name": "Wachner, Linda",
+   "parts": [
+    {
+     "page": 80,
+     "column": 4,
+     "lines": [
+      "Wachner, Linda",
+      "Warnaco, Inc.",
+      "200 East 65th Street #36S",
+      "New York, NY 10021 (h)",
+      "90 Park Avenue 26th Flr:",
+      "New York, NY 10016",
+      "212-370-8204",
+      "212-687-6771(f)",
+      "331-4742-8132 Paris (w)",
+      "310-473-0032 Sepulveda",
+      "310-479-0475 Sepulveda (f)",
+      "212-370-8204 Direct",
+      "212-370-8205 Secretary direct",
+      "212-308-1264 (hf)",
+      "212-751-3988 (h)",
+      "303-925-9029 Aspen (f)",
+      "303-920-2027 Aspen (fi)",
+      "518-287-3178 S. Hampton",
+      "516-287-4865 S. Hampton (f)",
+      "0607 971 212 Claude-Paris",
+      "Driver",
+      "917-856-3058 (р)",
+      "011-336-0726-5960 (p)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1344",
+   "name": "Wahl, Francis",
+   "parts": [
+    {
+     "page": 80,
+     "column": 4,
+     "lines": [
+      "Wahl, Francis",
+      "41 22 83 97000 (w)",
+      "Bernheim Halperian Ming Ducret",
+      "5 Avenue Leon Gaud",
+      "1206 Geneva Switzerland (w)",
+      "27 Chemin de L'Ermilage (h)",
+      "de La Belotte, Vesenaz, Switz",
+      "1222",
+      "4122-752-5990 (h)",
+      "4122-347-6831",
+      "41-77-24-0330 Portable",
+      "41 22 752 59 94 fax",
+      "33 607 167 263 Portable",
+      "335 56 22 12 33 Le pyla fax",
+      "335 56 22 13 50 Le pyla home"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,322 @@
+{
+ "page": 66,
+ "reviewed_on": "2026-09-19",
+ "method": "Visual comparison of every entry on the original PDF scan; enlarged crops for ambiguous readings.",
+ "source_sha256": "4f8e111d7bd29039742de62e9f67cf5051b617e26a923117df323a5d2fb3c0de",
+ "entries": [
+  {
+   "id": "E1152",
+   "name": null,
+   "parts": [
+    {
+     "page": 66,
+     "column": 1,
+     "lines": [
+      "contact)",
+      "3314766 3727 Karine (Nicole's",
+      "contact)",
+      "336 6520 0066 Deborah (p)",
+      "0861100404 (p) Laetitia",
+      "0682940794 Magdali",
+      "336 606 33172 Francois",
+      "011 336 6760 8207 Donna",
+      "011 331 4658 1508 Donna",
+      "011 336 1109 9059 Yelena",
+      "01133609635180 Nadia",
+      "06 2247 4450 Deborah",
+      "0609635180 Nadia",
+      "0662384798 Sonya (speak little",
+      "English)",
+      "0666033635 Tanya (speaks NO",
+      "English)",
+      "01133624604141 Nadia (USE",
+      "THIS as of 4-9-03)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1153",
+   "name": "Miele, Mr & Mrs",
+   "parts": [
+    {
+     "page": 66,
+     "column": 1,
+     "lines": [
+      "Miele, Mr & Mrs",
+      "00 33 9301 3359 ( h)",
+      "00 33 9306 1179 ( c)",
+      "00 33 9306 1273 ( c)",
+      "00 33 9301 2196 ( fax)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1154",
+   "name": "Ott Cynthia and Claude",
+   "parts": [
+    {
+     "page": 66,
+     "column": 1,
+     "lines": [
+      "Ott Cynthia and Claude",
+      "22 Avenue Foch, Apt 2DD",
+      "Paris, France 75116",
+      "011 331 4502 7300(h)",
+      "011 33674 003080 (cp",
+      "Email: 011 33 686 558377 (claude)",
+      "01133 153 05 70 83 (w)direct",
+      "01133 153 05 70 98 (f)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1155",
+   "name": "Pinto, Alberto",
+   "parts": [
+    {
+     "page": 66,
+     "column": 1,
+     "lines": [
+      "Pinto, Alberto",
+      "Hotel de la Victoire (w)",
+      "11 Rue d'Aboukir"
+     ]
+    },
+    {
+     "page": 66,
+     "column": 2,
+     "lines": [
+      "75002",
+      "Paris. FRANCE",
+      "011 331 401 30000(w)",
+      "011 331 4418 7575(h)",
+      "Email: alberto.pinto@albertopint",
+      "(Hm)Alberto Pinto (h)",
+      "61 Quai D'Orsay",
+      "1st Floor",
+      "Paris. France 75007",
+      "011 331 4753 8421 (h) Linda",
+      "001 809 362 4335 Nassau",
+      "001 809 362 4336 Nassau",
+      "011 331 4013 7580 (f)",
+      "011 33 60 770 2913 (p) Linda",
+      "011 33 6077 31338 (p)Alberto",
+      "011331 45 51 03 33 Serge",
+      "Boquet",
+      "011336 07 17 07 24 Serge",
+      "Boquet 3/2000",
+      "011 33 67 800 4392 (p)Serge",
+      "011 33 680010222 Car",
+      "011 33 140 137 596 Linda dir.",
+      "011 331 401 37642 Linda &",
+      "Alberto pvt fax",
+      "alberto.pinto@albertopinto.com",
+      "linda.pinto@albertopinto",
+      "serge.boquet@albertopinto",
+      "delphine.rateau@albertopinto",
+      "jean.huguen@albertopinto",
+      "011331 45 51 75 58 Danielle",
+      "01133 609 18 11 26 (p) Jean",
+      "01133 609 78 68 26 Yves",
+      "01133 662 62 71 36 Chantal",
+      "pascal.laparra@albertopinto",
+      "+33 144 187 575 Paris h",
+      "01121239933939 Pinto in",
+      "Morrocco",
+      "011 212 39 93 7171 Morrocco",
+      "fax",
+      "+33 144 1875 71 (hf)",
+      "+33 140 13 0000 (w)",
+      "+33 140 1375 98 Direct",
+      "01133680598876 Nissan's cell",
+      "infographie.pinto@albertopinto"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1156",
+   "name": "Plaza Athenee - Paris",
+   "parts": [
+    {
+     "page": 66,
+     "column": 3,
+     "lines": [
+      "Plaza Athenee - Paris",
+      "25 Avenue Montaigne",
+      "Paris, France 75008",
+      "33 1536 766 65",
+      "33 1536 766 66 (f)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1157",
+   "name": "Restaurant-takeouts",
+   "parts": [
+    {
+     "page": 66,
+     "column": 3,
+     "lines": [
+      "Restaurant-takeouts",
+      "Sushi 01 56 26 00 55"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1158",
+   "name": "Restaurants",
+   "parts": [
+    {
+     "page": 66,
+     "column": 3,
+     "lines": [
+      "Restaurants",
+      "Entrecote",
+      "15 rue Marbeaut",
+      "0149520717"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1159",
+   "name": "Ritz - Paris",
+   "parts": [
+    {
+     "page": 66,
+     "column": 3,
+     "lines": [
+      "Ritz - Paris",
+      "15, Place Vendome Cedex 01",
+      "Paris, France 75041",
+      "331-4316-3030",
+      "331-4316-3178(f)",
+      "331-4286-0091 Direct Fax Reser-",
+      "vations"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1160",
+   "name": "River Cafe",
+   "parts": [
+    {
+     "page": 66,
+     "column": 3,
+     "lines": [
+      "River Cafe",
+      "00 33 1 4093 5020",
+      "146 quai de Stalin grad"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1161",
+   "name": "Tante Louise",
+   "parts": [
+    {
+     "page": 66,
+     "column": 3,
+     "lines": [
+      "Tante Louise",
+      "41 Rue Boissy d'anglais",
+      "00 331 4265 0685"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1162",
+   "name": "Taxi Bleus",
+   "parts": [
+    {
+     "page": 66,
+     "column": 4,
+     "lines": [
+      "Taxi Bleus",
+      "01 49 36 10 10"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1163",
+   "name": "Taxis",
+   "parts": [
+    {
+     "page": 66,
+     "column": 4,
+     "lines": [
+      "Taxis",
+      "00 331 420 24202",
+      "00 331 49 361010",
+      "00 331 420 39999",
+      "00 331 420 06789"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1164",
+   "name": "Taxis Bleus",
+   "parts": [
+    {
+     "page": 66,
+     "column": 4,
+     "lines": [
+      "Taxis Bleus",
+      "0149 36 10 10"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1165",
+   "name": "Vieira Cotrin, Valdson",
+   "parts": [
+    {
+     "page": 66,
+     "column": 4,
+     "lines": [
+      "Vieira Cotrin, Valdson",
+      "21 Rue Voltaire",
+      "Paris",
+      "St. Dennis",
+      "Paris. 93200",
+      "014827 8533 (h)",
+      "0613014377",
+      "(Hm)1 Rue Chalgrin (Ave.Foch",
+      "Apt)",
+      "Room 4041 Floor 6",
+      "Paris France",
+      "0613 011 763 Maria (p) girlfriend",
+      "0144 778 840 Maria (w)",
+      "HOTELS (HT)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1166",
+   "name": "Berkeley Hotel",
+   "parts": [
+    {
+     "page": 66,
+     "column": 4,
+     "lines": [
+      "Berkeley Hotel",
+      "0207 235 6000"
+     ]
+    }
+   ]
+  }
+ ]
+}

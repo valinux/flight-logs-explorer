@@ -1,0 +1,485 @@
+{
+ "page": 70,
+ "reviewed_on": "2026-09-19",
+ "method": "Visual comparison of every entry on the original PDF scan; enlarged crops for ambiguous readings.",
+ "source_sha256": "4f8e111d7bd29039742de62e9f67cf5051b617e26a923117df323a5d2fb3c0de",
+ "entries": [
+  {
+   "id": "E1212",
+   "name": null,
+   "parts": [
+    {
+     "page": 70,
+     "column": 1,
+     "bbox": [
+      256,
+      256.0,
+      379,
+      362.28997802734375
+     ],
+     "continuation": true,
+     "visual_scope": "Automatically bounded source fragment",
+     "lines": [
+      "011 336 0331 9710 European por-",
+      "table",
+      "212 832 0500 NY office",
+      "310 720 5900(p)",
+      "805 969 5339(h)",
+      "bobz.ccap@pacific.net.sg",
+      "310 407 7315 direct fax to Tom's",
+      "assistant",
+      "011336 3048 7995 Euro cell",
+      "011 39 3356 172044 Italian porta-",
+      "ble",
+      "011 3933 5785 1775 Tracey",
+      "011 3933 5617 2011 David",
+      "Monahan",
+      "808 885 8668 David Monahan (Ha-",
+      "waii)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1213",
+   "name": "Barrett, Anthony",
+   "parts": [
+    {
+     "page": 70,
+     "column": 1,
+     "bbox": [
+      256,
+      362.28997802734375,
+      379,
+      482.25
+     ],
+     "continuation": false,
+     "visual_scope": "Automatically bounded source fragment",
+     "lines": [
+      "Barrett, Anthony",
+      "Ossa Properties",
+      "30 East 60th Street",
+      "Room 403",
+      "New York, NY 10022",
+      "212 288 3579 (h)",
+      "212 702 8818(w)",
+      "Email: ossa1@aol.com",
+      "(Hm)27 East 65th (h)",
+      "Apt. 2A",
+      "New York, NY 10021",
+      "718 268 7331 (f)",
+      "212 702 8814 (wf)",
+      "212 288 3579 Donna Landa - home",
+      "718 575 1000 Ossa Prop",
+      "908 249 3633 x224 Donna Landa -",
+      "work",
+      "917 612 4137 (p)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1214",
+   "name": "Barrett, Jonathan",
+   "parts": [
+    {
+     "page": 70,
+     "column": 1,
+     "bbox": [
+      256,
+      482.25,
+      379,
+      559.5
+     ],
+     "continuation": false,
+     "visual_scope": "Automatically bounded source fragment",
+     "lines": [
+      "Barrett, Jonathan",
+      "220 E. 63rd street #PH",
+      "New York, NY 10021",
+      "212 644 3012 (h)",
+      "001 212 816 9519 (w)",
+      "Email: J3arrett@aol.com, jbarret",
+      "(Hm)Luminus Management",
+      "498 8th Ave. 20th fl",
+      "New York, NY 10001",
+      "917 494 2792 (p)",
+      "310 260 4989 (h)",
+      "212 615 3424 (w)"
+     ]
+    },
+    {
+     "page": 70,
+     "column": 2,
+     "bbox": [
+      368,
+      257.0,
+      505,
+      277.25
+     ],
+     "continuation": true,
+     "visual_scope": "Automatically bounded source fragment",
+     "lines": [
+      "212 615 3430 (wf)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1215",
+   "name": "Beck, Jerry",
+   "parts": [
+    {
+     "page": 70,
+     "column": 2,
+     "bbox": [
+      368,
+      277.25,
+      505,
+      345.0
+     ],
+     "continuation": false,
+     "visual_scope": "Automatically bounded source fragment",
+     "lines": [
+      "Beck, Jerry",
+      "Office of Prof. Oder",
+      "The Limited, Inc.",
+      "4751 Kitzmiller Rd.",
+      "New Albany, Ohio 43054 (h)",
+      "Two Limited Pky",
+      "Columbus, Ohio 43230",
+      "614-415-7194",
+      "614-415-7171"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1216",
+   "name": "Benamou, Albert",
+   "parts": [
+    {
+     "page": 70,
+     "column": 2,
+     "bbox": [
+      368,
+      345.0,
+      505,
+      433.0
+     ],
+     "continuation": false,
+     "visual_scope": "Automatically bounded source fragment",
+     "lines": [
+      "Benamou, Albert",
+      "16 Avenue Matignon",
+      "Paris, France 75008",
+      "331 45 63 12 21(o)",
+      "331 45 63 22 11(f)",
+      "Email: benamou@art-cul-",
+      "ture.com",
+      "(Hm)(home)",
+      "18 Blvd. Georges Sevrat",
+      "92 300 Nevilly Sur Seine",
+      "0607011918 cell",
+      "0140883637 home"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1217",
+   "name": "Biddle-Hakim, Sophie",
+   "parts": [
+    {
+     "page": 70,
+     "column": 2,
+     "bbox": [
+      368,
+      433.0,
+      505,
+      529.75
+     ],
+     "continuation": false,
+     "visual_scope": "Automatically bounded source fragment",
+     "lines": [
+      "Biddle-Hakim, Sophie",
+      "Husband: Gilbert Hakim",
+      "Do not send mail to:",
+      "249 West 76th Street",
+      "Apt 2A",
+      "New York, NY 10023",
+      "212 873 2344 (h)",
+      "(Hm)Send mail to:",
+      "1349 Comstock Ave",
+      "Westwood, CA 90024",
+      "401 423 0495 Parents/ Rhode",
+      "Island",
+      "310 463 5759 (p)",
+      "310 553 5218 (h)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1218",
+   "name": "Bjorlin, Nadia",
+   "parts": [
+    {
+     "page": 70,
+     "column": 2,
+     "bbox": [
+      368,
+      529.75,
+      505,
+      561.5
+     ],
+     "continuation": false,
+     "visual_scope": "Automatically bounded source fragment",
+     "lines": [
+      "Bjorlin, Nadia",
+      "3 Longboat",
+      "Newport Coast, CA 92657",
+      "949 500 5555 (p)"
+     ]
+    },
+    {
+     "page": 70,
+     "column": 3,
+     "bbox": [
+      494,
+      280.75,
+      612,
+      307.75
+     ],
+     "continuation": true,
+     "visual_scope": "Automatically bounded source fragment",
+     "lines": [
+      "413 637 9745",
+      "818 404 7575 (p)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1219",
+   "name": "Black, Leon",
+   "parts": [
+    {
+     "page": 70,
+     "column": 3,
+     "bbox": [
+      494,
+      307.75,
+      612,
+      423.25
+     ],
+     "continuation": false,
+     "visual_scope": "Automatically bounded source fragment",
+     "lines": [
+      "Black, Leon",
+      "Apollo Management, L.P.",
+      "1301 Avenue of the Americas (w",
+      "38th Floor",
+      "between 52nd and 53rd",
+      "New York, NY 10019",
+      "212-515-3205 (w)",
+      "212-515-3261 (wf)",
+      "Email: black@nyc.apollolp.com",
+      "(Hm)Residence",
+      "760 Park Avenue",
+      "(Entrance on 72)",
+      "New York, NY 10021",
+      "212 288 5578 (h)",
+      "631 283 4650 (h)",
+      "914 234 9685 Bedford",
+      "212 794 0227 (hf)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1220",
+   "name": "Borden, David",
+   "parts": [
+    {
+     "page": 70,
+     "column": 3,
+     "bbox": [
+      494,
+      423.25,
+      612,
+      501.0
+     ],
+     "continuation": false,
+     "visual_scope": "Automatically bounded source fragment",
+     "lines": [
+      "Borden, David",
+      "President",
+      "Victoria International Corp.",
+      "187 West Brookline St.",
+      "Boston",
+      "MA",
+      "02118",
+      "617-247-4100 (w)",
+      "617-247-0038 (wf)",
+      "Email: davidaborden@aol.com",
+      "617-233-3084 (p)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1221",
+   "name": "Bovino, Kelly",
+   "parts": [
+    {
+     "page": 70,
+     "column": 3,
+     "bbox": [
+      494,
+      501.0,
+      612,
+      542.5
+     ],
+     "continuation": false,
+     "visual_scope": "Automatically bounded source fragment",
+     "lines": [
+      "Bovino, Kelly",
+      "120 Hart Avenue",
+      "Santa Monica, CA 90405",
+      "310 396 9948(h)",
+      "Email: kbovino@aol.com",
+      "310 286 0271 ext. 113 (w)"
+     ]
+    },
+    {
+     "page": 70,
+     "column": 4,
+     "bbox": [
+      601,
+      277.25,
+      735,
+      305.0
+     ],
+     "continuation": true,
+     "visual_scope": "Automatically bounded source fragment",
+     "lines": [
+      "310 286 0279 (wf)",
+      "310 722 9948 (p)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1222",
+   "name": "Brown, Coco",
+   "parts": [
+    {
+     "page": 70,
+     "column": 4,
+     "bbox": [
+      601,
+      305.0,
+      735,
+      402.75
+     ],
+     "continuation": false,
+     "visual_scope": "Automatically bounded source fragment",
+     "lines": [
+      "Brown, Coco",
+      "Brown Companies",
+      "461 Park Ave., South",
+      "New York",
+      "NY",
+      "10016",
+      "212-683-4400",
+      "212-685-0011 (f)",
+      "(Hm)59 East 90th",
+      "New York",
+      "NY 10028",
+      "212-289 55 53 (h)",
+      "646 281 8158 (p)",
+      "631 537 3714 Country"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1223",
+   "name": "Buckingham Research",
+   "parts": [
+    {
+     "page": 70,
+     "column": 4,
+     "bbox": [
+      601,
+      402.75,
+      735,
+      454.5
+     ],
+     "continuation": false,
+     "visual_scope": "Automatically bounded source fragment",
+     "lines": [
+      "Buckingham Research",
+      "David Keidan",
+      "750 Third Avenue 6th Floor",
+      "212 922-5525 or 26",
+      "212 922 2717(f)",
+      "212 922 5543 Bob Crowley"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1224",
+   "name": "Butler Aviation, Newark",
+   "parts": [
+    {
+     "page": 70,
+     "column": 4,
+     "bbox": [
+      601,
+      454.5,
+      735,
+      515.75
+     ],
+     "continuation": false,
+     "visual_scope": "Automatically bounded source fragment",
+     "lines": [
+      "Butler Aviation, Newark",
+      "(new name)",
+      "Signature Flight Support",
+      "Hanger 15",
+      "Newark International Airport",
+      "Newark, NJ 07114",
+      "201-624-1660"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1225",
+   "name": "Campos, Michelle",
+   "parts": [
+    {
+     "page": 70,
+     "column": 4,
+     "bbox": [
+      601,
+      515.75,
+      735,
+      548.75
+     ],
+     "continuation": false,
+     "visual_scope": "Automatically bounded source fragment",
+     "lines": [
+      "Campos, Michelle",
+      "11 Dash Place",
+      "Bronx, NY 10463",
+      "[Handwritten source annotation: fired Sofy.]"
+     ]
+    }
+   ]
+  }
+ ]
+}

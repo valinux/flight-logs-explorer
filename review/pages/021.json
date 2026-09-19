@@ -1,0 +1,387 @@
+{
+ "page": 21,
+ "reviewed_on": "2026-09-19",
+ "method": "Visual comparison of every entry on the original PDF scan; enlarged crops for ambiguous readings.",
+ "source_sha256": "4f8e111d7bd29039742de62e9f67cf5051b617e26a923117df323a5d2fb3c0de",
+ "entries": [
+  {
+   "id": "E0326",
+   "name": "Frost, Mr David & Lady Carina",
+   "parts": [
+    {
+     "page": 21,
+     "column": 1,
+     "lines": [
+      "Frost, Mr David & Lady",
+      "Carina",
+      "22 Carlyle Square",
+      "London SW3 6EY",
+      "0207-351 3035 (h)",
+      "0207-241 0317 (h)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0327",
+   "name": "Frostrup, Mariella",
+   "parts": [
+    {
+     "page": 21,
+     "column": 1,
+     "lines": [
+      "Frostrup, Mariella",
+      "07970 727 272",
+      "0207-792 2976",
+      "Email: mariella@brazenhusky.com"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0328",
+   "name": "Fry, Cosmo & Amanda",
+   "parts": [
+    {
+     "page": 21,
+     "column": 1,
+     "lines": [
+      "Fry, Cosmo & Amanda",
+      "29 Stnhope Gdns",
+      "London SW7",
+      "0207-373 6435(h0"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0329",
+   "name": "Fullhurst Teresa",
+   "parts": [
+    {
+     "page": 21,
+     "column": 1,
+     "lines": [
+      "Fullhurst Teresa",
+      "001 917 705 7230"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0330",
+   "name": "Furstenberg, Heinrich & Milana",
+   "parts": [
+    {
+     "page": 21,
+     "column": 1,
+     "lines": [
+      "Furstenberg, Heinrich &",
+      "Milana",
+      "771 Donaueschingin",
+      "Holserberg Germany",
+      "00 49 771 86508 (h)",
+      "00 49 771 86423 (w)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0331",
+   "name": "Furstenbug Alex, Alexandra V.",
+   "parts": [
+    {
+     "page": 21,
+     "column": 1,
+     "lines": [
+      "Furstenbug Alex,",
+      "Alexandra V.",
+      "001 212 396 4393(h)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0332",
+   "name": "Furstenburg Buravelli, Nina",
+   "parts": [
+    {
+     "page": 21,
+     "column": 2,
+     "lines": [
+      "Furstenburg Buravelli,",
+      "Nina",
+      "via Delle Mantellante 26",
+      "Rome, Italy",
+      "00 39 3394671195(p)",
+      "00 39 0658331144(h)",
+      "Email: 00 39 0564609077(coun-",
+      "try)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0333",
+   "name": "Fyson, Edwina",
+   "parts": [
+    {
+     "page": 21,
+     "column": 2,
+     "lines": [
+      "Fyson, Edwina",
+      "13 Ives Street",
+      "London SW3,",
+      "0207-584 5577 (h)",
+      "00 345 661 30 30 (w)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0334",
+   "name": "Gaetani, Gelasio",
+   "parts": [
+    {
+     "page": 21,
+     "column": 2,
+     "lines": [
+      "Gaetani, Gelasio",
+      "Via Gregoriana, 5",
+      "Roma, 00187",
+      "06 678 1781"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0335",
+   "name": "Gaetani, Rufreido",
+   "parts": [
+    {
+     "page": 21,
+     "column": 2,
+     "lines": [
+      "Gaetani, Rufreido",
+      "001 212 371 4136"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0336",
+   "name": "Gallman, Kuki",
+   "parts": [
+    {
+     "page": 21,
+     "column": 2,
+     "lines": [
+      "Gallman, Kuki",
+      "Box 45593",
+      "Gigiri Road",
+      "Nairobi",
+      "Kenya,",
+      "00 25 4 2520048 (h)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0337",
+   "name": "Ganero, Mario Jr.",
+   "parts": [
+    {
+     "page": 21,
+     "column": 2,
+     "lines": [
+      "Ganero, Mario Jr.",
+      "55 11 9970 1020 (p)"
+     ]
+    },
+    {
+     "page": 21,
+     "column": 3,
+     "lines": [
+      "001 646 251 2211"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0338",
+   "name": "Ganoza, Esteban Juan",
+   "parts": [
+    {
+     "page": 21,
+     "column": 3,
+     "lines": [
+      "Ganoza, Esteban Juan",
+      "Avenida El Rosario 450",
+      "San Isidro, Lima 27 Peru",
+      "+511 442 8734 (h)",
+      "+51 1 264 4278 (hf)",
+      "Email: jganoza@terra.com.pe",
+      "(Hm) Pizarro 428 (h&w)",
+      "Trujillo, Peru",
+      "+511 735 2000 (p)",
+      "001 212 625 2331 (friend in NY)",
+      "001 212 941 9341 (when in NY)",
+      "+51 44 2454 02/01 (w)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0339",
+   "name": "Garcia, Ludmila",
+   "parts": [
+    {
+     "page": 21,
+     "column": 3,
+     "lines": [
+      "Garcia, Ludmila",
+      "Los Jeronicos Apt 4-22",
+      "Calle de Moreto 9",
+      "28014 Madrid Spain",
+      "00 34 1 420 0211 (h)",
+      "00 34 1 420 2560 (h)",
+      "00 34 1 396 5613 (w)",
+      "& Villa las Libres",
+      "Camino Real",
+      "Marbella Spain",
+      "00 34 52 774594 (h)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0340",
+   "name": "Gardner, Adam",
+   "parts": [
+    {
+     "page": 21,
+     "column": 3,
+     "lines": [
+      "Gardner, Adam",
+      "001 212 691 9860"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0341",
+   "name": "Garland Michael",
+   "parts": [
+    {
+     "page": 21,
+     "column": 3,
+     "lines": [
+      "Garland Michael",
+      "0777 5787777(p)",
+      "0207-235 2729(h)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0342",
+   "name": "Garson Jeremy",
+   "parts": [
+    {
+     "page": 21,
+     "column": 4,
+     "lines": [
+      "Garson Jeremy",
+      "0207-771 3264"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0343",
+   "name": "Gaspar, Nacho",
+   "parts": [
+    {
+     "page": 21,
+     "column": 4,
+     "lines": [
+      "Gaspar, Nacho",
+      "43 Camino del Sur",
+      "La Moraleja",
+      "Madrid Spain 28409",
+      "00 34 1 6500325 (h)",
+      "00 34 1 5645030 (w)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0344",
+   "name": "Gaul, Harriett",
+   "parts": [
+    {
+     "page": 21,
+     "column": 4,
+     "lines": [
+      "Gaul, Harriett",
+      "Percy Lodge",
+      "15 Christ Church Rd",
+      "London SW14 7AB",
+      "0208-878 0111(h)",
+      "0208-392 9171(f)",
+      "0208-878 0111",
+      "0207-499 9080(w)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0345",
+   "name": "Geary Tim",
+   "parts": [
+    {
+     "page": 21,
+     "column": 4,
+     "lines": [
+      "Geary Tim",
+      "001 917 566 0551",
+      "Email:",
+      "tim@sohohouseny.com/tim@t"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0346",
+   "name": "Gelardin, Jack",
+   "parts": [
+    {
+     "page": 21,
+     "column": 4,
+     "lines": [
+      "Gelardin, Jack",
+      "28 Mallard St",
+      "London SW3",
+      "0207-376 8497(h)",
+      "0207-409 2324(w)",
+      "0101 212 734 7905 (h)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0347",
+   "name": "German-Ribon Catriona",
+   "parts": [
+    {
+     "page": 21,
+     "column": 4,
+     "lines": [
+      "German-Ribon Catriona",
+      "0779 965 1673"
+     ]
+    }
+   ]
+  }
+ ]
+}

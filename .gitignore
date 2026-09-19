@@ -1,6 +1,10 @@
 # regenerable OCR intermediates
-pages/
-cols/
-ocr/
+/pages/
+/cols/
+/ocr/
 # OS junk
 .DS_Store
+__pycache__/
+/review_work/
+# Local account recovery material
+/github-recovery-codes.txt

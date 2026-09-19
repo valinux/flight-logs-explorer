@@ -1,0 +1,208 @@
+{
+ "page": 2,
+ "reviewed_on": "2026-09-19",
+ "method": "Visual comparison of every entry on the original PDF scan; enlarged crops for ambiguous readings.",
+ "source_sha256": "4f8e111d7bd29039742de62e9f67cf5051b617e26a923117df323a5d2fb3c0de",
+ "entries": [
+  {
+   "id": "E0013",
+   "name": null,
+   "parts": [
+    {
+     "page": 2,
+     "column": 1,
+     "lines": [
+      "0207-637 8655 (w)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0014",
+   "name": "Alun-Jones, Carella",
+   "parts": [
+    {
+     "page": 2,
+     "column": 1,
+     "lines": [
+      "Alun-Jones, Carella",
+      "34 Eaton Place",
+      "London SW1,",
+      "0207-235 7500 (h)",
+      "0372 58158 (c)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0015",
+   "name": "Alun-Jones, Jeremy & Deborah",
+   "parts": [
+    {
+     "page": 2,
+     "column": 1,
+     "lines": [
+      "Alun-Jones, Jeremy & Deborah",
+      "Old Park",
+      "Fishbourne",
+      "West Sussex, PO18 8AP",
+      "0207 879 3381(w)",
+      "0124 357 2102(h)",
+      "Email: daj@old-park.co.uk",
+      "(Hm)21 St. James Square",
+      "London SW1Y 4JP",
+      "(Jeremy)",
+      "0777 412 1212 (Dp)",
+      "0207 930 4237 (wf)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0016",
+   "name": "Alvarez, Senor Vincente",
+   "parts": [
+    {
+     "page": 2,
+     "column": 1,
+     "lines": [
+      "Alvarez, Senor Vincente",
+      "00 34 1 276 8697 (h)",
+      "011 34 915 903490 (w)",
+      "00 34 1 563 8466 (f)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0017",
+   "name": "Amon, Mr Philippe",
+   "parts": [
+    {
+     "page": 2,
+     "column": 1,
+     "lines": [
+      "Amon, Mr Philippe",
+      "Domaine de Bougy",
+      "1170 Aubonne",
+      "Switzerland,",
+      "41 21 681 5555(w)",
+      "00 41 21 821 2222(h)",
+      "Email:",
+      "philippe.amon@sicpa.com",
+      "(Hm)25 Eaton Square (2nd home)",
+      "Flat D",
+      "London SW1",
+      "41 21 821 2200 (hf)",
+      "00 41 792103175 (p)",
+      "00 41 21 627 5920 (w)",
+      "0041 21 821 2200(hf)",
+      "41 21 627 5925 (wf)"
+     ]
+    },
+    {
+     "page": 2,
+     "column": 2,
+     "lines": [
+      "0207-235-7769/9169 (2nd home phone & fax)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0018",
+   "name": "Amon, Roberta & Maurice",
+   "parts": [
+    {
+     "page": 2,
+     "column": 2,
+     "lines": [
+      "Amon, Roberta & Maurice",
+      "4 East 72 Street",
+      "New York NY 10021",
+      "001 212 535 9877 (h)",
+      "001 212 319 2020 (w)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0019",
+   "name": "Anastos, Lisa",
+   "parts": [
+    {
+     "page": 2,
+     "column": 2,
+     "lines": [
+      "Anastos, Lisa",
+      "200 E 72nd",
+      "New York",
+      "NY",
+      "10021,",
+      "001 212 446 4761(w)",
+      "001 212 737 1722(h)",
+      "001 917 923 4513 (p)",
+      "001 212 446 4900 (wf)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0020",
+   "name": "Anderson, Lulu",
+   "parts": [
+    {
+     "page": 2,
+     "column": 2,
+     "lines": [
+      "Anderson, Lulu",
+      "0207-937 7730",
+      "0976 287 202"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0021",
+   "name": "Appleby, Robert & Alex",
+   "parts": [
+    {
+     "page": 2,
+     "column": 2,
+     "lines": [
+      "Appleby, Robert & Alex",
+      "16 Grafton Square",
+      "London SW4,",
+      "0207-498 3400 (h)",
+      "RA@Asia.debt.com",
+      "Email: alex@rockgecko.com",
+      "(Hm)House 7",
+      "3 Consort Rise",
+      "Pok Fu Lam",
+      "HK",
+      "00 852 9104 2651 (Ap)",
+      "00 852 2817 4181 (h)",
+      "00 852 2817 4281 (hf)",
+      "00 852 2536 4567 (Rw)",
+      "00 852 2147 2813 (wf)",
+      "00 852 9104 2615 (Rp)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E0022",
+   "name": "Arango, Maite",
+   "parts": [
+    {
+     "page": 2,
+     "column": 2,
+     "lines": [
+      "Arango, Maite",
+      "Espalter #10 (home)"
+     ]
+    }
+   ]
+  }
+ ]
+}

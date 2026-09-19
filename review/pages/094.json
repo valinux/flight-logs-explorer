@@ -1,0 +1,185 @@
+{
+ "page": 94,
+ "reviewed_on": "2026-09-19",
+ "method": "Visual comparison of every entry on the original PDF scan; enlarged crops for ambiguous readings.",
+ "source_sha256": "4f8e111d7bd29039742de62e9f67cf5051b617e26a923117df323a5d2fb3c0de",
+ "entries": [
+  {
+   "id": "E1596",
+   "name": "Andrea",
+   "parts": [
+    {
+     "page": 94,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      611.9999389648438,
+      792.0
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Andrea",
+      "(561) 798-6103"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1597",
+   "name": "Kelly",
+   "parts": [
+    {
+     "page": 94,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      611.9999389648438,
+      792.0
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Kelly",
+      "(561) 707-1789"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1598",
+   "name": "Melissa",
+   "parts": [
+    {
+     "page": 94,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      611.9999389648438,
+      792.0
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Melissa",
+      "(561) 641-7658"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1599",
+   "name": "Debra",
+   "parts": [
+    {
+     "page": 94,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      611.9999389648438,
+      792.0
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Debra",
+      "(561) 625-0378"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1600",
+   "name": "Heidi",
+   "parts": [
+    {
+     "page": 94,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      611.9999389648438,
+      792.0
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Heidi",
+      "(954) 452-8582"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1601",
+   "name": "K[unclear]tya",
+   "parts": [
+    {
+     "page": 94,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      611.9999389648438,
+      792.0
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "K[unclear]tya",
+      "(954) 467-0412"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1602",
+   "name": "Alicia",
+   "parts": [
+    {
+     "page": 94,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      611.9999389648438,
+      792.0
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Alicia",
+      "(917) 345-3107"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1603",
+   "name": "Caroline",
+   "parts": [
+    {
+     "page": 94,
+     "column": 1,
+     "bbox": [
+      0,
+      0,
+      611.9999389648438,
+      792.0
+     ],
+     "continuation": false,
+     "visual_scope": "Full handwritten page",
+     "lines": [
+      "Caroline",
+      "(305) 321-4022",
+      "[Source annotation: a star appears beside this row.]"
+     ]
+    }
+   ]
+  }
+ ]
+}

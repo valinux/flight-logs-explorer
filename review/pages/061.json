@@ -1,0 +1,380 @@
+{
+ "page": 61,
+ "reviewed_on": "2026-09-19",
+ "method": "Visual comparison of every entry on the original PDF scan; enlarged crops for ambiguous readings.",
+ "source_sha256": "4f8e111d7bd29039742de62e9f67cf5051b617e26a923117df323a5d2fb3c0de",
+ "entries": [
+  {
+   "id": "E1048",
+   "name": "Beverly Wilshire",
+   "parts": [
+    {
+     "page": 61,
+     "column": 1,
+     "lines": [
+      "Beverly Wilshire",
+      "001 310 275 5200"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1049",
+   "name": "Bice",
+   "parts": [
+    {
+     "page": 61,
+     "column": 1,
+     "lines": [
+      "Bice",
+      "54th (Madison/Fifth)",
+      "001 212 688 1999"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1050",
+   "name": "Bilboquet",
+   "parts": [
+    {
+     "page": 61,
+     "column": 1,
+     "lines": [
+      "Bilboquet",
+      "0101 212 751 3036"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1051",
+   "name": "Bond Street",
+   "parts": [
+    {
+     "page": 61,
+     "column": 1,
+     "lines": [
+      "Bond Street",
+      "6 Bond St",
+      "777 2500"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1052",
+   "name": "Carlyle",
+   "parts": [
+    {
+     "page": 61,
+     "column": 1,
+     "lines": [
+      "Carlyle",
+      "35 E. 76th Street",
+      "001 212 744 1600"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1053",
+   "name": "Christies- New York",
+   "parts": [
+    {
+     "page": 61,
+     "column": 1,
+     "lines": [
+      "Christies- New York",
+      "GM's Acct# 2074367",
+      "JE's Acct# 20745",
+      "20 Rockefeller Plaza",
+      "New York. NY 10020",
+      "001 212 636 2000 (f)",
+      "212 636 2010",
+      "212 546 1036 Michael",
+      "212-636-2511 Sharon Kim",
+      "212 546 1002 Natasha",
+      "0207-389 2865 (bidno)",
+      "212 546 1122 Patrick Cooney",
+      "0207-581 7611 S. Ken",
+      "0207-839 9060 St. James"
+     ]
+    },
+    {
+     "page": 61,
+     "column": 2,
+     "lines": [
+      "0370 917 323 (p)Franka Mercati",
+      "0207-589 4181(h)Franka",
+      "212 546 1195 Carol Magill",
+      "212 636 2515 Maria Loss - Client",
+      "Services",
+      "212 702 2627 Kim Solow",
+      "212 636 2389 Sarah Charnon"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1054",
+   "name": "Cipriani Downtown",
+   "parts": [
+    {
+     "page": 61,
+     "column": 2,
+     "lines": [
+      "Cipriani Downtown",
+      "376 West Broadway",
+      "New York. NY 10012",
+      "212 343 0999"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1055",
+   "name": "Coffee Shop",
+   "parts": [
+    {
+     "page": 61,
+     "column": 2,
+     "lines": [
+      "Coffee Shop",
+      "162 Union West",
+      "162 Union West"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1056",
+   "name": "Cohen Gibby",
+   "parts": [
+    {
+     "page": 61,
+     "column": 2,
+     "lines": [
+      "Cohen Gibby",
+      "Polly Gym",
+      "428 East 75th Street (bet 1st",
+      "176 E. 71st St Penthouse",
+      "001 212 570 0616(h)",
+      "Email: Gibby-Cohen@nyc.rr.com",
+      "(Hm)Patti-Cohen@nyc.rr.com",
+      "001 212 628 6969(gym)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1057",
+   "name": "Cook",
+   "parts": [
+    {
+     "page": 61,
+     "column": 2,
+     "lines": [
+      "Cook",
+      "Henry Meer",
+      "001 212 924 6160(h)",
+      "0101 212 677 4100"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1058",
+   "name": "Dawat Haute Cuisine of India",
+   "parts": [
+    {
+     "page": 61,
+     "column": 3,
+     "lines": [
+      "Dawat Haute Cuisine of",
+      "India",
+      "210 East 58th Street",
+      "New York",
+      "0101 212 355 7555"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1059",
+   "name": "Delmonico's",
+   "parts": [
+    {
+     "page": 61,
+     "column": 3,
+     "lines": [
+      "Delmonico's",
+      "Rosa/account under NYSG",
+      "320 Park Avenue",
+      "New York, NY 10022",
+      "212-317-8777"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1060",
+   "name": "Doyle's",
+   "parts": [
+    {
+     "page": 61,
+     "column": 3,
+     "lines": [
+      "Doyle's",
+      "175 East 87th",
+      "001 212 427 2730"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1061",
+   "name": "Elaine",
+   "parts": [
+    {
+     "page": 61,
+     "column": 3,
+     "lines": [
+      "Elaine",
+      "577 Second Avenue #61",
+      "NY. NY",
+      "001 212 779 9645"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1062",
+   "name": "Electrolysis",
+   "parts": [
+    {
+     "page": 61,
+     "column": 3,
+     "lines": [
+      "Electrolysis",
+      "988 1215"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1063",
+   "name": "Elio's Restaurent",
+   "parts": [
+    {
+     "page": 61,
+     "column": 3,
+     "lines": [
+      "Elio's Restaurent",
+      "2nd avenue between 84th and 85",
+      "212 772 2242"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1064",
+   "name": "Essex House",
+   "parts": [
+    {
+     "page": 61,
+     "column": 4,
+     "lines": [
+      "Essex House",
+      "160 Central Park South",
+      "New York, New York 10019",
+      "212-247-0300"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1065",
+   "name": "Estia",
+   "parts": [
+    {
+     "page": 61,
+     "column": 4,
+     "lines": [
+      "Estia",
+      "308 E 86th",
+      "NY. NY",
+      "628 9100"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1066",
+   "name": "Exercise-New York",
+   "parts": [
+    {
+     "page": 61,
+     "column": 4,
+     "lines": [
+      "Exercise-New York",
+      "1 212 228 2655 (h) Kristin Mcgee",
+      "1 646 498 8095 (p) Kristin Mcgee",
+      "1 212 986 1127 (h) Magali",
+      "1 917 553 0136 (p) Magali",
+      "646 338 4491 Jessica Benton(p)",
+      "212 737 5947 Jessica Benton(h)",
+      "781 820 6694 Jennifer(ballerina)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1067",
+   "name": "Four Seasons",
+   "parts": [
+    {
+     "page": 61,
+     "column": 4,
+     "lines": [
+      "Four Seasons",
+      "212-758-5700"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1068",
+   "name": "Four Seasons Hotel",
+   "parts": [
+    {
+     "page": 61,
+     "column": 4,
+     "lines": [
+      "Four Seasons Hotel",
+      "57 East 57th Street",
+      "212 758 5700"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1069",
+   "name": "Four Seasons Restaurant",
+   "parts": [
+    {
+     "page": 61,
+     "column": 4,
+     "lines": [
+      "Four Seasons Restau-",
+      "rant",
+      "99 E. 52nd (Park/Lex.)",
+      "New York. NY 10022",
+      "212-754-9494",
+      "212-754-1077"
+     ]
+    }
+   ]
+  }
+ ]
+}

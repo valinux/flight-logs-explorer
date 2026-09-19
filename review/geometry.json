@@ -1,0 +1,294 @@
+{
+ "source_sha256": "4f8e111d7bd29039742de62e9f67cf5051b617e26a923117df323a5d2fb3c0de",
+ "reviewed_on": "2026-09-19",
+ "entries": [
+  {
+   "id": "E0556",
+   "remove_empty_parts": [
+    {
+     "page": 33,
+     "column": 3
+    }
+   ],
+   "reason": "Source image shows all Lo Cascio lines in column2. Column3 starts with Loeb; no continuation."
+  },
+  {
+   "id": "E0561",
+   "remove_empty_parts": [
+    {
+     "page": 33,
+     "column": 4
+    }
+   ],
+   "reason": "Source image shows all Louthan lines in column3. Column4 starts with Love; no continuation."
+  },
+  {
+   "id": "E1241",
+   "remove_empty_parts": [
+    {
+     "page": 72,
+     "column": 3
+    }
+   ],
+   "reason": "All Farkas Andrew text is in column2. Column3 starts Farkas Jonathan with no continuation."
+  },
+  {
+   "id": "E1244",
+   "remove_empty_parts": [
+    {
+     "page": 72,
+     "column": 4
+    }
+   ],
+   "reason": "All Foster Taylor text is in column3. Column4 starts Gary Eric with no continuation."
+  },
+  {
+   "id": "E1069",
+   "reassign_parts": [
+    {
+     "page": 62,
+     "column": 1,
+     "to_id": "E1617"
+    }
+   ],
+   "reason": "Two unidentified London address lines at start of page62 cannot reliably be assigned to preceding New York restaurant."
+  },
+  {
+   "id": "E1335",
+   "remove_empty_parts": [
+    {
+     "page": 80,
+     "column": 2
+    }
+   ],
+   "reason": "Reviewed original scan: Trossle is wholly in column1; column2 starts Trump."
+  },
+  {
+   "id": "E1341",
+   "remove_empty_parts": [
+    {
+     "page": 80,
+     "column": 4
+    }
+   ],
+   "reason": "Reviewed original scan: Valukas is wholly in column3; column4 starts Visoski."
+  },
+  {
+   "id": "E1120",
+   "remove_empty_parts": [
+    {
+     "page": 64,
+     "column": 1
+    }
+   ],
+   "reason": "Chemical Bank is wholly on page63; page64 starts Colonial Bank, no continuation."
+  },
+  {
+   "id": "E1124",
+   "extract_lines": [
+    {
+     "page": 64,
+     "column": 1,
+     "to_id": "E1618",
+     "lines": [
+      "FRANCE (FR)"
+     ],
+     "remaining_bbox": [
+      263,
+      453.75,
+      380,
+      494
+     ]
+    }
+   ],
+   "reason": "Underlined FRANCE (FR) section heading is separate from preceding PB National entry."
+  },
+  {
+   "id": "E1432",
+   "bounds": [
+    {
+     "page": 85,
+     "column": 2,
+     "bbox": [
+      352,
+      286.75,
+      508,
+      308
+     ]
+    }
+   ],
+   "reason": "Separate underlined section heading removed from contact source box; heading preserved as a new source record."
+  },
+  {
+   "id": "E1481",
+   "bounds": [
+    {
+     "page": 87,
+     "column": 4,
+     "bbox": [
+      607,
+      485,
+      741,
+      527
+     ]
+    }
+   ],
+   "reason": "Separate underlined section heading removed from contact source box; heading preserved as a new source record."
+  },
+  {
+   "id": "E1165",
+   "extract_lines": [
+    {
+     "page": 66,
+     "column": 4,
+     "to_id": "E1621",
+     "lines": [
+      "HOTELS (HT)"
+     ],
+     "remaining_bbox": [
+      601,
+      387.75,
+      735,
+      472
+     ]
+    }
+   ],
+   "reason": "Underlined section heading is separate from preceding contact entry."
+  },
+  {
+   "id": "E1200",
+   "extract_lines": [
+    {
+     "page": 68,
+     "column": 4,
+     "to_id": "E1622",
+     "lines": [
+      "ITALY (I)"
+     ],
+     "remaining_bbox": [
+      601,
+      356.75,
+      735,
+      387.5
+     ]
+    }
+   ],
+   "reason": "Underlined section heading is separate from preceding contact entry."
+  },
+  {
+   "id": "E1202",
+   "extract_lines": [
+    {
+     "page": 68,
+     "column": 4,
+     "to_id": "E1623",
+     "lines": [
+      "JEFFREY (J)"
+     ],
+     "remaining_bbox": [
+      601,
+      459.5,
+      735,
+      481
+     ]
+    }
+   ],
+   "reason": "Underlined section heading is separate from preceding contact entry."
+  },
+  {
+   "id": "E1449",
+   "remove_empty_parts": [
+    {
+     "page": 86,
+     "column": 4
+    }
+   ],
+   "reason": "Reviewed source Michael & Sally has no continuation at column4; next column starts Mike Pezulo."
+  },
+  {
+   "id": "E1510",
+   "bounds": [
+    {
+     "page": 89,
+     "column": 1,
+     "bbox": [
+      247,
+      320.25,
+      365,
+      390
+     ]
+    }
+   ],
+   "reason": "London Airways is a separate source entry below Kent, Geoffrey and has its own new record."
+  },
+  {
+   "id": "E1536",
+   "bounds": [
+    {
+     "page": 91,
+     "column": 2,
+     "bbox": [
+      363,
+      379.5,
+      521,
+      440.5
+     ]
+    }
+   ],
+   "reason": "Move boundary into whitespace between distinct source headings."
+  },
+  {
+   "id": "E1537",
+   "bounds": [
+    {
+     "page": 91,
+     "column": 2,
+     "bbox": [
+      363,
+      440.5,
+      521,
+      525.569
+     ]
+    }
+   ],
+   "reason": "Move boundary into whitespace between distinct source headings."
+  },
+  {
+   "id": "E1544",
+   "bounds": [
+    {
+     "page": 91,
+     "column": 4,
+     "bbox": [
+      614,
+      414.5,
+      748,
+      450
+     ]
+    }
+   ],
+   "reason": "Move boundary into whitespace between distinct source headings."
+  },
+  {
+   "id": "E1547",
+   "remove_boxes": [
+    {
+     "page": 91,
+     "column": 4,
+     "bbox": [
+      614,
+      562.75,
+      748,
+      576.25
+     ]
+    }
+   ],
+   "reason": "Second source box covers blank space below Domb entry."
+  },
+  {
+   "id": "E1446",
+   "kind": "Source annotation",
+   "notes": "The handwritten word Phones appears inside the circle around Maronet, Bill (E1445). Retained as an annotation with its stable ID, not a separate contact."
+  }
+ ]
+}

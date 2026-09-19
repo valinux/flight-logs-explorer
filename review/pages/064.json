@@ -1,0 +1,345 @@
+{
+ "page": 64,
+ "reviewed_on": "2026-09-19",
+ "method": "Visual comparison of every entry on the original PDF scan; enlarged crops for ambiguous readings.",
+ "source_sha256": "4f8e111d7bd29039742de62e9f67cf5051b617e26a923117df323a5d2fb3c0de",
+ "entries": [
+  {
+   "id": "E1120",
+   "name": null,
+   "parts": [
+    {
+     "page": 64,
+     "column": 1,
+     "lines": []
+    }
+   ]
+  },
+  {
+   "id": "E1121",
+   "name": "Colonial Bank",
+   "parts": [
+    {
+     "page": 64,
+     "column": 1,
+     "lines": [
+      "Colonial Bank",
+      "Cristina Bello",
+      "125 Worth Avenue",
+      "Palm Beach, Fl 33480",
+      "561 627 1776 (w)",
+      "561 833 0943 (f)",
+      "Leonor"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1122",
+   "name": "Nat West.",
+   "parts": [
+    {
+     "page": 64,
+     "column": 1,
+     "lines": [
+      "Nat West.",
+      "Rob Bowran (Sharon Mulvany)",
+      "Personal Accts. Executive Dept",
+      "121 High Street",
+      "Oxford, OX14YU",
+      "01865 79 0053",
+      "01865 20 5157 (f)",
+      "Email: www.natwest.com",
+      "(Hm)32 Cornmarket Street OX1",
+      "3HQ",
+      "08201994 Current Account",
+      "01865 79 88 18 Main number"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1123",
+   "name": "Natwest Bank",
+   "parts": [
+    {
+     "page": 64,
+     "column": 1,
+     "lines": [
+      "Natwest Bank",
+      "1865 790053",
+      "1865 205157 (f)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1124",
+   "name": "PB National",
+   "parts": [
+    {
+     "page": 64,
+     "column": 1,
+     "lines": [
+      "PB National",
+      "Dottie Wilson",
+      "ck acct # 0110056698",
+      "mm acct# 0110019334",
+      "001 561 653 5352",
+      "FRANCE (FR)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1125",
+   "name": "Alaia, Azzedine",
+   "parts": [
+    {
+     "page": 64,
+     "column": 1,
+     "lines": [
+      "Alaia, Azzedine",
+      "7 Rue De Moussy"
+     ]
+    },
+    {
+     "page": 64,
+     "column": 2,
+     "lines": [
+      "Paris, France 75004",
+      "00 33 1 4272 1919"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1126",
+   "name": "ATT Acess",
+   "parts": [
+    {
+     "page": 64,
+     "column": 2,
+     "lines": [
+      "ATT Acess",
+      "0 800 99 0011,"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1127",
+   "name": "Bristol Hotel",
+   "parts": [
+    {
+     "page": 64,
+     "column": 2,
+     "lines": [
+      "Bristol Hotel",
+      "112 Rue du Faubourg St. Honore",
+      "75008 Paris, France",
+      "011 33 153 43 43 00",
+      "53 43 43 01(f)",
+      "Email: clientservices@hotelbris-",
+      "331 698 99475 Jean marie home",
+      "33(0)611999322 Jeanmarie port"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1128",
+   "name": "Cab Blue",
+   "parts": [
+    {
+     "page": 64,
+     "column": 2,
+     "lines": [
+      "Cab Blue",
+      "4936 1010"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1129",
+   "name": "Cabaret (night club)",
+   "parts": [
+    {
+     "page": 64,
+     "column": 2,
+     "lines": [
+      "Cabaret (night club)",
+      "Contact Frank",
+      "68 rue Pierre Charnet"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1130",
+   "name": "Car rental",
+   "parts": [
+    {
+     "page": 64,
+     "column": 2,
+     "lines": [
+      "Car rental",
+      "Avis/St Tropez",
+      "Mr. Baccah",
+      "00 33 04 93 21 48 90"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1131",
+   "name": "Chateau de la Messardier",
+   "parts": [
+    {
+     "page": 64,
+     "column": 2,
+     "lines": [
+      "Chateau de la",
+      "Messardier",
+      "011 33 4945 676000"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1132",
+   "name": "Chez Denise",
+   "parts": [
+    {
+     "page": 64,
+     "column": 3,
+     "lines": [
+      "Chez Denise",
+      "00 33 1 4236 2182"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1133",
+   "name": "Chez L'Ami Louis",
+   "parts": [
+    {
+     "page": 64,
+     "column": 3,
+     "lines": [
+      "Chez L'Ami Louis",
+      "32. Rue du Vert-Bois",
+      "Paris. France 75003",
+      "33 1 4887 77 48",
+      "Ferme Lundi & Mardi"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1134",
+   "name": "Epstein, Jeffrey",
+   "parts": [
+    {
+     "page": 64,
+     "column": 3,
+     "lines": [
+      "Epstein, Jeffrey",
+      "French Apartment",
+      "22 Avenue Foch",
+      "Apartment 2DD",
+      "Paris, France 75116",
+      "331 441 70210",
+      "331 441 70211(f)",
+      "(Hm)1 Rue Chalgrine/Staff En-",
+      "trance",
+      "BA135",
+      "B298",
+      "01 47 37 18 18 Ambasador Car",
+      "Co.",
+      "0153 43 4300 Jean Marie (w)",
+      "01 698 99475 Jean Marie (h)",
+      "06 11 999 322 Jean Marie (p)",
+      "061 30 14 377 (p) Valdson Cotrin",
+      "0 148 27 85 33 (h) Valdson Cotrin",
+      "01 40 67 18 82 staff line",
+      "01 45 00 44 78 Mr. Cornu/garage",
+      "06 77 81 5521 car phone",
+      "06 8072 7282 Evelyn",
+      "06 10786479 Mr. Coulaux(p)",
+      "0607 269 785 Experton(p)",
+      "0144 014 401 Experton (w)",
+      "331 441 702 19 guest line",
+      "331 44 86 4552 Ms. Guerin",
+      "01 45 00 88 90 Ms. Peres(conc.)",
+      "01 45 00 30 79 Ms. Peres",
+      "06 09 592 853 Ms. Peres (p)",
+      "331 44 01 4401 Mr. Stephane"
+     ]
+    },
+    {
+     "page": 64,
+     "column": 4,
+     "lines": [
+      "Coulaux",
+      "06 12 14 37 56 Mr Santos"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1135",
+   "name": "Epstein, Jeffrey (G)",
+   "parts": [
+    {
+     "page": 64,
+     "column": 4,
+     "lines": [
+      "Epstein, Jeffrey (G)",
+      "French Apartment",
+      "22 Avenue Foch",
+      "Apartment 2DD",
+      "Paris, France 75116",
+      "331 441 70210",
+      "331 441 70211(f)",
+      "Email:",
+      "epsteinj@wanadoo.fr(Valds",
+      "(Hm)1 Rue Chalgrine/Staff En-",
+      "trance",
+      "BA135",
+      "B298",
+      "01 47 37 18 18 Ambasador Car",
+      "Co.",
+      "01 53 43 43 00 Jean Marie @",
+      "Bristol",
+      "01 698 99 475 Jean Marie @",
+      "home",
+      "06 11999322 Jean Marie cell",
+      "01133 61 30 14 377 (p) Valdson",
+      "Cotrin",
+      "01133 148 27 85 33 (h) Valdson",
+      "Cotrin",
+      "01 40 67 18 82 staff line",
+      "01 45 00 44 78 Mr. Cornu/garage",
+      "06 77 81 5521 car phone",
+      "Evelyn 0680 727282",
+      "331 441 702 19 guest line",
+      "01 45 00 88 90 Ms. Peres(conc.)",
+      "01 45 00 30 79 Ms. Peres",
+      "06 09 592 853 Ms. Peres (p)",
+      "01 45 27 65 05 Ms.",
+      "Roule/Kitchen appliances",
+      "01 42 64 50 21 Mr. Pascal(cable",
+      "tv)",
+      "06 62 31 88 55 Mr Pascal cell(ca-",
+      "ble tv)",
+      "01 43 87 49 30 Mr Karim or",
+      "Lazno (stereo)"
+     ]
+    }
+   ]
+  }
+ ]
+}

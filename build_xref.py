@@ -14,6 +14,8 @@ import json
 import re
 import unicodedata
 
+from contact_data import ROOT, phone_text
+
 NICKNAME_GROUPS = [
     {"bill", "billy", "will", "william", "willie", "wills"},
     {"bob", "bobby", "rob", "robert", "robbie", "bert"},
@@ -165,12 +167,7 @@ def split_parts(name):
     return [p.strip(" .,;:") for p in parts if p.strip(" .,;:")]
 
 
-def main():
-    with open("flights.json") as f:
-        flights = json.load(f)
-    with open("astra_contacts.json") as f:
-        contacts = json.load(f)
-
+def build_matches(flights, contacts):
     h = flights["headers"]
     i_first, i_last = h.index("First Name"), h.index("Last Name")
 
@@ -197,7 +194,6 @@ def main():
         })
         e["flights"] += 1
     passengers = list(pax.values())
-    print(f"passengers: {len(passengers)}")
 
     # indexes
     by_last = {}
@@ -219,12 +215,15 @@ def main():
                 "passenger": p["name"], "flights": p["flights"],
                 "contact_id": c["id"], "contact_name": c["name"],
                 "pages": c["pages"], "ref": c["ref"],
-                "phones": c["phones"], "emails": c["emails"],
+                "phones": [phone_text(phone) for phone in c["phones"]], "emails": c["emails"],
                 "address": c["address"], "status": c["status"],
+                "source_url": c["source_url"], "review_flags": c["review_flags"],
                 "match": mtype, "score": score,
             }
 
     for c in contacts:
+        if c["block_type"] != "Entry / source block":
+            continue
         cname = c["name"]
         if not cname or len(norm(cname)) < 2:
             continue
@@ -266,9 +265,17 @@ def main():
                                 if p["first"] == tok:
                                     add(p, c, "weak: first name only", 40)
 
-    out = sorted(matches.values(), key=lambda m: (-m["score"], -m["flights"], m["passenger"]))
-    with open("xref.json", "w") as f:
-        json.dump(out, f, ensure_ascii=False, separators=(",", ":"))
+    return sorted(matches.values(), key=lambda m: (-m["score"], -m["flights"], m["passenger"]))
+
+
+def main():
+    with open(ROOT / "flights.json", encoding="utf-8") as f:
+        flights = json.load(f)
+    with open(ROOT / "contacts.json", encoding="utf-8") as f:
+        contacts = json.load(f)
+    out = build_matches(flights, contacts)
+    from parse_contacts import write_exports
+    write_exports(contacts, out)
 
     from collections import Counter
     tiers = Counter(m["match"] for m in out)
